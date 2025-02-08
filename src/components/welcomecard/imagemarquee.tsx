@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 
-const reviews = [
+const images = [
   {
     description: "אימון מאסטרים",
     img: "/masters.jpg",
@@ -32,8 +32,8 @@ const reviews = [
   },
 ];
 
-const firstColumn = reviews.slice(0, reviews.length / 2);
-const secondColumn = reviews.slice(reviews.length / 2);
+const firstColumn = images.slice(0, images.length / 2);
+const secondColumn = images.slice(images.length / 2);
 
 const ReviewCard = ({
   description,
@@ -52,7 +52,7 @@ const ReviewCard = ({
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
-      <img className="w-64" alt="" src={img} />
+      <img className=" w-64" alt="" src={img} />
       <blockquote className="absolute z-10 bottom-2 right-2 text-sm">
         {description}
       </blockquote>
@@ -61,7 +61,7 @@ const ReviewCard = ({
   );
 };
 
-export function MarqueeDemo() {
+export function ImagesMarquee() {
   return (
     <div className="relative flex h-[400px] xl:h-[700px] w-full flex-col xl:flex-row items-center justify-center overflow-hidden">
       <div className="hidden xl:flex">

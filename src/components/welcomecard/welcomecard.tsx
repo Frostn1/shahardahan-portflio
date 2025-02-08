@@ -1,7 +1,7 @@
 import ContactForm from "@/components/contactform/contactform";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
-import { MarqueeDemo } from "./marquee";
+import { ImagesMarquee } from "./imagemarquee";
 
 const WelcomeCard = () => {
   return (
@@ -24,7 +24,7 @@ const WelcomeCard = () => {
           <ContactForm />
         </Dialog>
       </div>
-      <MarqueeDemo />
+      <ImagesMarquee />
     </div>
   );
 };

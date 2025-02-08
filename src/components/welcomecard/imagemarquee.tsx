@@ -3,13 +3,14 @@ import { cn } from "@/lib/utils";
 
 const images = [
   {
+    description: "רוכבים ונהנים",
+    img: "/desk.jpg",
+  },
+  {
     description: "עבודה על מהירות",
     img: "/masters.jpg",
   },
-  {
-    description: "טריאתלון",
-    img: "/ironman1.jpg",
-  },
+
   {
     description: "כושר קרבי",
     img: "/mil.jpg",
@@ -51,9 +52,10 @@ const images = [
     img: "/pilates1.jpg",
   },
   {
-    description: "רוכבים ונהנים",
-    img: "/desk.jpg",
+    description: "טריאתלון",
+    img: "/ironman1.jpg",
   },
+
   {
     description: "גראבל",
     img: "/gravel.jpg",
@@ -88,7 +90,7 @@ const ImageCard = ({
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
-      <img className=" w-64" alt="" src={img} />
+      <img className="w-full h-full object-cover" alt="" src={img} />
       <blockquote className="absolute text-(--sub-header) z-10 bottom-2 right-2 text-sm">
         {description}
       </blockquote>
@@ -110,8 +112,8 @@ export function ImagesMarquee() {
           <ImageCard key={Math.random()} {...review} />
         ))}
       </Marquee>
-      <div className="hidden sm:grid  pointer-events-none absolute inset-y-0 left-0 w-1/7 bg-gradient-to-r from-white dark:from-background" />
-      <div className="hidden sm:grid pointer-events-none absolute inset-y-0 right-0 w-1/7 bg-gradient-to-l from-white dark:from-background" />
+      <div className="hidden sm:grid  pointer-events-none absolute inset-y-0 left-0 w-1/8 bg-gradient-to-r from-white dark:from-background" />
+      <div className="hidden sm:grid pointer-events-none absolute inset-y-0 right-0 w-1/8 bg-gradient-to-l from-white dark:from-background" />
     </div>
   );
 }

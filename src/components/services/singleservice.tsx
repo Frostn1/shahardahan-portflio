@@ -40,7 +40,7 @@ const SingleService: React.FC<SingleServiceProps> = ({
         />
       ) : (
         <img
-          className="col-start-1 col-end-1 row-span rounded-3xl w-30 h-30 md:h-40 md:w-40 lg:w-60 lg:h-60"
+          className="col-start-1 col-end-1 row-span rounded-3xl w-30 h-30 md:h-40 md:w-40 lg:w-70 lg:h-70"
           src={image}
           alt="Image was here"
         />

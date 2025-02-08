@@ -7,11 +7,11 @@ const WelcomeCard = () => {
   return (
     <div id={"welcome"} className="h-full grid grid-rows-2 gap-0 xl:gap-30">
       <div className="p-5 sm:p-0 flex flex-col items-center justify-center bg-green-0 gap-10">
-        <div className="text-3xl lg:text-5xl text-center text-wrap">
+        <div className="text-4xl lg:text-5xl text-center text-wrap">
           שחר דהן <br />
           מאמן כושר וטריאתלון
         </div>
-        <div dir="rtl" className="text-(--sub-header) text-lg text-center">
+        <div dir="rtl" className="text-(--sub-header) text-xl lg:text-2xl text-center">
           החזון שלי:
           <br /> לעזור לכם לממש את הפוטנציאל וליהנות מהדרך!
         </div>

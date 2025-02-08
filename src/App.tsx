@@ -16,6 +16,7 @@ const pages = [
     El: Services,
     id: "services",
   },
+
   {
     El: Connect,
     id: "connect",

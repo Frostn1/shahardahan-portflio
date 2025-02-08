@@ -1,22 +1,38 @@
-import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
+import { cn } from "@/lib/utils";
 
 const images = [
   {
-    description: "אימון מאסטרים",
+    description: "עבודה על מהירות",
     img: "/masters.jpg",
+  },
+  {
+    description: "טריאתלון",
+    img: "/ironman1.jpg",
   },
   {
     description: "כושר קרבי",
     img: "/mil.jpg",
   },
   {
-    description: "סטודיו בוטיק",
+    description: "קייפ אפיק",
+    img: "/self1.jpg",
+  },
+  {
+    description: "פילאטס מזרן",
+    img: "/pilates.jpg",
+  },
+  {
+    description: "אימון פונקציונלי",
     img: "/studio.jpg",
   },
   {
-    description: "אימוני סטודיו",
+    description: "כוח וליבה",
     img: "/studio1.jpg",
+  },
+  {
+    description: "שחר דהן",
+    img: "/bike.jpg",
   },
   {
     description: "הפסקת קפה",
@@ -27,23 +43,35 @@ const images = [
     img: "/masters1.jpg",
   },
   {
-    description: "שחר דהן",
-    img: "/self.jpg",
-  },
-  {
-    description: "פילאטס מזרן",
-    img: "/pilates.jpg",
+    description: "עבודה זוגית",
+    img: "/couplework.jpg",
   },
   {
     description: "פילאטס מזרן",
     img: "/pilates1.jpg",
+  },
+  {
+    description: "רוכבים ונהנים",
+    img: "/desk.jpg",
+  },
+  {
+    description: "גראבל",
+    img: "/gravel.jpg",
+  },
+  {
+    description: "אימון לתוצאות",
+    img: "/brand.jpg",
+  },
+  {
+    description: "אפיק ישראל",
+    img: "/epicisrael.jpg",
   },
 ];
 
 const firstColumn = images.slice(0, images.length / 2);
 const secondColumn = images.slice(images.length / 2);
 
-const ReviewCard = ({
+const ImageCard = ({
   description,
   img,
 }: {
@@ -61,7 +89,7 @@ const ReviewCard = ({
       )}
     >
       <img className=" w-64" alt="" src={img} />
-      <blockquote className="absolute z-10 bottom-2 right-2 text-sm">
+      <blockquote className="absolute text-(--sub-header) z-10 bottom-2 right-2 text-sm">
         {description}
       </blockquote>
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-4/5 bg-gradient-to-t from-white dark:from-background"></div>
@@ -74,16 +102,16 @@ export function ImagesMarquee() {
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-red-0 pb-20">
       <Marquee pauseOnHover className="[--duration:35s]">
         {firstColumn.map((review) => (
-          <ReviewCard key={Math.random()} {...review} />
+          <ImageCard key={Math.random()} {...review} />
         ))}
       </Marquee>
       <Marquee reverse pauseOnHover className="[--duration:35s]">
         {secondColumn.map((review) => (
-          <ReviewCard key={Math.random()} {...review} />
+          <ImageCard key={Math.random()} {...review} />
         ))}
       </Marquee>
       <div className="hidden sm:grid  pointer-events-none absolute inset-y-0 left-0 w-1/7 bg-gradient-to-r from-white dark:from-background" />
-      <div className="hidden smF:grid pointer-events-none absolute inset-y-0 right-0 w-1/7 bg-gradient-to-l from-white dark:from-background" />
+      <div className="hidden sm:grid pointer-events-none absolute inset-y-0 right-0 w-1/7 bg-gradient-to-l from-white dark:from-background" />
     </div>
   );
 }

@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="flex h-5 flex-row-reverse items-center">
         {navs.map(({ name, id }) => (
           <Button key={id} onClick={() => handleScroll(id)} variant={"link"}>
-            <p className="text-[12px] sm:text-xs md:text-sm">{name}</p>
+            <p className="text-[15px] sm:text-xs md:text-sm">{name}</p>
           </Button>
         ))}
       </div>

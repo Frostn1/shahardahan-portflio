@@ -71,7 +71,7 @@ const ReviewCard = ({
 
 export function ImagesMarquee() {
   return (
-    <div className="relative flex h-[400px] xl:h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-red-0 pb-20">
+    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-red-0 pb-20">
       <Marquee pauseOnHover className="[--duration:10s]">
         {firstColumn.map((review) => (
           <ReviewCard key={Math.random()} {...review} />
@@ -82,8 +82,8 @@ export function ImagesMarquee() {
           <ReviewCard key={Math.random()} {...review} />
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/7 bg-gradient-to-r from-white dark:from-background" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/7 bg-gradient-to-l from-white dark:from-background" />
+      <div className="hidden sm:grid  pointer-events-none absolute inset-y-0 left-0 w-1/7 bg-gradient-to-r from-white dark:from-background" />
+      <div className="hidden smF:grid pointer-events-none absolute inset-y-0 right-0 w-1/7 bg-gradient-to-l from-white dark:from-background" />
     </div>
   );
 }

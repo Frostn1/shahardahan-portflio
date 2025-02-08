@@ -6,6 +6,7 @@ import Services from "@/components/services/services";
 import About from "./components/about/about";
 import { Ripple } from "./components/magicui/ripple";
 import WelcomeCard from "./components/welcomecard/welcomecard";
+import Footer from "./components/footer/footer";
 const pages = [
   {
     El: WelcomeCard,
@@ -40,6 +41,7 @@ function App() {
             </BlurFade>
           </Page>
         ))}
+        <Footer />
       </div>
     </div>
   );

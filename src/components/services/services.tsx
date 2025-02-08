@@ -4,7 +4,7 @@ const services = [
     name: "סטודיו בוטיק​",
     description:
       "אימונים פונקציונלים, אימונים לגיל השלישי, פילאטיס מזרן, קבוצות קטנות ואישיים",
-    image: "/studio-clean.jpg",
+    image: "/studio-clean2.jpg",
   },
   {
     name: "כושר קרבי והכנה לצבא​",

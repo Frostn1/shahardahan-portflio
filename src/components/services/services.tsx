@@ -28,7 +28,7 @@ const services = [
 ];
 const Services = () => {
   return (
-    <div className="flex flex-col p-5 lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-10">
+    <div className="flex flex-col pb-20 p-5 lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-10">
       {services.map(({ name, description, image, video }) => (
         <SingleService
           key={Math.random()}

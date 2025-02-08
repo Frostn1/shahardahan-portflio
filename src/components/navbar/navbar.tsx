@@ -1,7 +1,5 @@
 import { Button } from "@/components/ui/button";
 
-
-
 const navs = [
   {
     name: "בית",
@@ -28,12 +26,12 @@ const Navbar = () => {
   return (
     <div
       className={
-        "fixed z-20 top-0 flex flex-row-reverse w-full h-[60px] items-center justify-between box-border sm:pl-5 pr-5 md:pr-10 md:pl-10 bg-background"
+        "fixed z-20 top-0 flex flex-row w-full h-[60px] items-center justify-between box-border sm:pr-5 pl-5 md:pr-10 md:pl-10 bg-background"
       }
     >
       <div className="flex flex-row items-center gap-2 font-bold">
+        <img src="/logo.png" className="h-11" />
         <div className="hidden sm:grid">שחר דהן | אימון לתוצאות</div>
-        <img src="/logo.png" className="h-10" />
       </div>
 
       <div className="flex h-5 flex-row-reverse items-center">

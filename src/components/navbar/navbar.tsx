@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import FacebookLogo from "@/assets/facebook.svg?react";
+import FacebookLogo from "@/assets/facebook.png";
+
 const links = [
   {
     url: "https://www.facebook.com/profile.php?id=100087787164428",
@@ -18,8 +19,8 @@ const navs = [
     id: "services",
   },
   {
-    name: "About",
-    id: "about-page",
+    name: "Connect",
+    id: "connect",
   },
 ];
 
@@ -57,10 +58,10 @@ const Navbar = () => {
         </div>
         <Separator className="hidden md:grid" orientation="vertical" />
         <div className="hidden md:flex">
-          {links.map(({ url, logo: Logo }) => (
+          {links.map(({ url, logo }) => (
             <Button asChild variant={"link"}>
               <a target="_blank" rel="noreferrer" href={url}>
-                {<Logo className={"h-5"} />}
+                <img src={logo} className="h-6" />
               </a>
             </Button>
           ))}

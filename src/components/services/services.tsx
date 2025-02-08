@@ -25,7 +25,7 @@ const services = [
 ];
 const Services = () => {
   return (
-    <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-10 h-full">
+    <div className="flex flex-col p-5 lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-10">
       {services.map(({ name, description, image }) => (
         <SingleService name={name} description={description} image={image} />
       ))}

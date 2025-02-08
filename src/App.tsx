@@ -3,7 +3,7 @@ import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import Navbar from "@/components/navbar/navbar";
 import Page from "@/components/page/page";
 import Services from "@/components/services/services";
-import About from "./components/about/about";
+import Connect from "./components/connect/connect";
 import { Ripple } from "./components/magicui/ripple";
 import WelcomeCard from "./components/welcomecard/welcomecard";
 import Footer from "./components/footer/footer";
@@ -17,8 +17,8 @@ const pages = [
     id: "services",
   },
   {
-    El: About,
-    id: "about",
+    El: Connect,
+    id: "connect",
   },
 ];
 // 00adf2

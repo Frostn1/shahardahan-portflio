@@ -63,7 +63,7 @@ const ReviewCard = ({
 
 export function ImagesMarquee() {
   return (
-    <div className="relative flex h-[400px] xl:h-[700px] w-full flex-col xl:flex-row items-center justify-center overflow-hidden">
+    <div className="relative flex h-[400px] xl:h-[700px] w-full xl:w-fit flex-col xl:flex-row items-center justify-center overflow-hidden">
       <div className="hidden xl:flex">
         <Marquee pauseOnHover vertical className="[--duration:15s]">
           {firstColumn.map((review) => (

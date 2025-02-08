@@ -72,12 +72,12 @@ const ReviewCard = ({
 export function ImagesMarquee() {
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-red-0 pb-20">
-      <Marquee pauseOnHover className="[--duration:10s]">
+      <Marquee pauseOnHover className="[--duration:35s]">
         {firstColumn.map((review) => (
           <ReviewCard key={Math.random()} {...review} />
         ))}
       </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:10s]">
+      <Marquee reverse pauseOnHover className="[--duration:35s]">
         {secondColumn.map((review) => (
           <ReviewCard key={Math.random()} {...review} />
         ))}

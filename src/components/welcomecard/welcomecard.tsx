@@ -5,17 +5,18 @@ import { ImagesMarquee } from "./imagemarquee";
 
 const WelcomeCard = () => {
   return (
-    <div
-      id={"welcome"}
-      className="h-full grid gap-0 xl:gap-5 grid-cols-1 grid-rows-2 xl:grid-cols-2 xl:grid-rows-1"
-    >
-      <div className="p-5 sm:p-0 flex flex-col items-end row-start-1 row-end-2 gap-5 xl:col-start-2 xl:col-end-2 xl:row-start-1">
-        <div className="text-3xl lg:text-5xl text-right text-wrap">
-          אני מלווה אנשים להגיע לפוטנציאל הספורטיבי שלהם
+    <div id={"welcome"} className="h-full grid grid-rows-2 gap-0 xl:gap-30">
+      <div className="p-5 sm:p-0 flex flex-col items-center justify-center bg-green-0 gap-10">
+        <div className="text-3xl lg:text-5xl text-center text-wrap">
+          אני עוזר לכם לממש את הפוטנציאל שלכם
         </div>
-        <div className="text-(--sub-header) text-wrap sm:w-sm text-right">
-          בעזרת אימונים בסטודיו בוטיק באלוני אבא, בניית תוכניות אימון מותאמות
-          אישית על פי יעדים
+        <div
+          dir="rtl"
+          className="text-(--sub-header) text-wrap sm:w-md text-center"
+        >
+          בעל סטודיו בוטיק לאימוני כושר. <br />
+          מאמן קבוצות רכיבת שטח למסטרס, ובונה תוכניות אימון אישיות ליעדים שלכם.
+          מתמחה בהכנת מתאמנים לתחרויות טריאתלון ואיש הברזל, כולל ליווי תזונתי.
         </div>
         <Dialog>
           <DialogTrigger asChild>

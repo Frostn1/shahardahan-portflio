@@ -30,7 +30,7 @@ function App() {
       <Ripple className={"fixed"} />
       <div className={"h-screen no-scrollbar scroll-auto"}>
         {pages.map(({ El, id }, idx) => (
-          <Page id={id}>
+          <Page key={id} id={id}>
             <BlurFade
               className="relative h-[calc(100%-60px)]"
               key={id}

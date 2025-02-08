@@ -70,7 +70,12 @@ const Connect = () => {
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-5">
             {socials.map(({ text, url, logo }) => (
-              <a rel="noreferrer" target="_blank" href={url}>
+              <a
+                key={Math.random()}
+                rel="noreferrer"
+                target="_blank"
+                href={url}
+              >
                 <div className="sm:text-sm text-md flex gap-2 justify-end items-center">
                   {text}
                   <img src={logo} className="h-7" />

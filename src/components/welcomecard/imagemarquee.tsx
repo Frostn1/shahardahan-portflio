@@ -30,6 +30,14 @@ const images = [
     description: "שחר דהן",
     img: "/self.jpg",
   },
+  {
+    description: "פילאטס מזרן",
+    img: "/pilates.jpg",
+  },
+  {
+    description: "פילאטס מזרן",
+    img: "/pilates1.jpg",
+  },
 ];
 
 const firstColumn = images.slice(0, images.length / 2);

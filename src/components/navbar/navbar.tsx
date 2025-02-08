@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <div
       className={
-        "fixed z-20 top-0 flex w-full h-[60px] items-center justify-between box-border pr-10 pl-10 bg-background"
+        "fixed z-20 top-0 flex w-full h-[60px] items-center justify-between box-border sm:pr-5 pl-5 md:pr-10 md:pl-10 bg-background"
       }
     >
       <p
@@ -47,11 +47,11 @@ const Navbar = () => {
       <p className={"font-bold text-3xl font-[AuroRumpthut] w-fit md:hidden"}>
         S D
       </p>
-      <div className="flex h-5 items-center md:space-x-4 text-xs md:text-sm">
+      <div className="flex h-5 items-center md:space-x-4">
         <div>
           {navs.map(({ name, id }) => (
             <Button onClick={() => handleScroll(id)} variant={"link"}>
-              <p>{name}</p>
+              <p className="text-[12px] sm:text-xs md:text-sm">{name}</p>
             </Button>
           ))}
         </div>

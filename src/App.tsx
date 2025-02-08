@@ -1,11 +1,11 @@
-import Navbar from "@/components/navbar/navbar";
-import { ScrollProgress } from "@/components/magicui/scroll-progress";
-import WelcomeCard from "./components/welcomecard/welcomecard";
-import Page from "@/components/page/page";
 import { BlurFade } from "@/components/magicui/blur-fade";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
+import Navbar from "@/components/navbar/navbar";
+import Page from "@/components/page/page";
 import Services from "@/components/services/services";
-import { DotPattern } from "@/components/magicui/dot-pattern";
-import { cn } from "@/lib/utils";
+import About from "./components/about/about";
+import { Ripple } from "./components/magicui/ripple";
+import WelcomeCard from "./components/welcomecard/welcomecard";
 const pages = [
   {
     El: WelcomeCard,
@@ -15,17 +15,18 @@ const pages = [
     El: Services,
     id: "services",
   },
+  {
+    El: About,
+    id: "about",
+  },
 ];
+// 00adf2
 function App() {
   return (
     <div className="h-full w-full font-[Varela] ">
       <ScrollProgress className="top-[60px]" />
       <Navbar />
-      <DotPattern
-        className={cn(
-          "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
-        )}
-      />
+      <Ripple className={"fixed"} />
       <div className={"h-screen no-scrollbar scroll-auto"}>
         {pages.map(({ El, id }, idx) => (
           <Page id={id}>

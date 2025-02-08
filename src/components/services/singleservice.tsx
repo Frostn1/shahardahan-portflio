@@ -12,9 +12,13 @@ const SingleService: React.FC<SingleServiceProps> = ({
   image,
 }) => {
   return (
-    <div className={"w-2xl"}>
-      <div>{name}</div>
-      <div className="text-(--subtext)">{description}</div>
+    <div
+      className={
+        "w-full h-full flex flex-col gap-2 items-end rounded-3xl p-4 box-border text-right transition duration-500 hover:-translate-y-3 transform-gpu dark:bg-background dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
+      }
+    >
+      <div className="font-bold">{name}</div>
+      <div className="text-(--subtext) w-sm">{description}</div>
       <img src={image} alt="Image was here" />
     </div>
   );

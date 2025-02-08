@@ -9,15 +9,15 @@ const WelcomeCard = () => {
         אני מלווה אנשים להגיע לפוטנציאל הספורטיבי שלהם
       </div>
       <div className="text-(--sub-header) text-wrap md:w-sm text-right">
-        בעזרת אימונים אצלי בסטודיו, בניית תוכניות אימון מותאמות אישית על פי
-        יעדים
+        בעזרת אימונים בסטודיו בוטיק באלוני אבא, בניית תוכניות אימון מותאמות
+        אישית על פי יעדים
       </div>
-        <Dialog>
-          <DialogTrigger asChild>
-            <InteractiveHoverButton>צור קשר</InteractiveHoverButton>
-          </DialogTrigger>
-          <ContactForm />
-        </Dialog>
+      <Dialog>
+        <DialogTrigger asChild>
+          <InteractiveHoverButton>צרו קשר</InteractiveHoverButton>
+        </DialogTrigger>
+        <ContactForm />
+      </Dialog>
     </div>
   );
 };

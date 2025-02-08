@@ -10,6 +10,11 @@
     url("./fonts/Auro Rumpthut.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Varela"; /*Can be any text*/
+  src: local("Varela"),
+    url("./fonts/VarelaRound-Regular.ttf") format("truetype");
+}
 * {
   user-select: none;
   -ms-overflow-style: none; /* IE and Edge */
@@ -17,7 +22,7 @@
 }
 
 :root {
-  font-family: "Roboto-Slab";
+  font-family: "Roboto-Slab Varela";
   /* overflow: hidden; */
   --color-1: hsl(0 100% 63%);
   --color-2: hsl(270 100% 63%);
@@ -74,7 +79,9 @@
 }
 
 .dark {
-  --background: 224 71% 4%; /*hsl(20 14.3% 4.1%);*/
+  /* --background: hsl(236, 23%, 12%); */
+  --background: hsl(115, 11%, 19%);
+
   --foreground: hsl(60 9.1% 97.8%);
   --card: hsl(20 14.3% 4.1%);
   --card-foreground: hsl(60 9.1% 97.8%);

@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div
       className={
-        "fixed z-20 top-0 flex flex-row w-full h-[60px] items-center justify-between box-border sm:pr-5 pl-5 md:pr-10 md:pl-10 bg-background"
+        "fixed z-20 top-0 flex flex-row w-full h-[60px] items-center justify-between box-border pr-2 sm:pr-5 pl-5 md:pr-10 md:pl-10 bg-background"
       }
     >
       <div className="flex flex-row items-center gap-2 font-bold">

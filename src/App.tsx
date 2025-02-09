@@ -26,10 +26,10 @@ const pages = [
 function App() {
   return (
     <div className="h-full w-full font-[Varela] ">
-      <ScrollProgress className="top-[60px]" />
       <Navbar />
+      <ScrollProgress className="top-[60px]" />
       <Ripple className={"fixed"} />
-      <div className={"h-screen no-scrollbar scroll-auto"}>
+      <div className={"h-screen no-scrollbar scroll-auto pt-[80px]"}>
         {pages.map(({ El, id }, idx) => (
           <Page key={id} id={id}>
             <BlurFade

@@ -16,7 +16,6 @@
     url("./fonts/VarelaRound-Regular.ttf") format("truetype");
 }
 * {
-  user-select: none;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }

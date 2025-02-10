@@ -20,7 +20,7 @@ const images = [
     img: "/self1.jpg",
   },
   {
-    description: "פילאטס מזרן",
+    description: "פילאטיס מזרן",
     img: "/pilates.jpg",
   },
   {

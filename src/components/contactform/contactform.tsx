@@ -29,7 +29,7 @@ const ContactForm = () => {
           <Input
             onChange={(e) => setName(e.target.value)}
             id="name"
-            dir="rtl"
+            aria-label="שם"
             placeholder="ישראל ישראלי"
             value={name}
             className="col-span-3"
@@ -37,19 +37,19 @@ const ContactForm = () => {
           />
         </div>
         <div className="flex flex-col gap-5">
-          <Label htmlFor="username" className="text-right">
+          <Label htmlFor="idea-text" className="text-right">
             תיאור
           </Label>
           <Textarea
             required
-            dir="rtl"
+            aria-label="תיאור רעיון"
             id="idea-text"
             onChange={(e) => setBody(e.target.value)}
             placeholder="איפה תרצה שנתחיל ?"
           />
         </div>
       </div>
-      <Button variant={"default"} className="justify-self-end w-fit">
+      <Button asChild aria-label="שלח אימייל" variant={"default"} className="justify-self-end w-fit">
         <a href={`mailto:hello@shahardahan.com?subject=${name}&body=${body}`}>
           שלח אימייל
         </a>

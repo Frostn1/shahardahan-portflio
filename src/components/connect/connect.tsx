@@ -51,7 +51,7 @@ const contacts = [
 const Connect = () => {
   return (
     <div className="p-5 flex flex-col items-center gap-3">
-      <div className="text-3xl text-center">? מוכנים להתחיל</div>
+      <h2 className="text-3xl text-center">? מוכנים להתחיל</h2>
       <div className="flex gap-5 w-[95%] md:w-[30%]">
         {contacts.map(({ logo, button }) => (
           <div
@@ -65,7 +65,7 @@ const Connect = () => {
       </div>
 
       <div className="border h-fit rounded-xl bg-background p-5 text-right flex flex-col gap-5  items-center w-[95%] md:w-[30%]">
-        <div className="text-lg md:text-md">! מצאו אותי ברשתות החברתיות</div>
+        <h2 className="text-lg md:text-md">! מצאו אותי ברשתות החברתיות</h2>
         <div className="grid grid-cols-3 gap-10 ">
           {socials.map(({ text, url, logo }) => (
             <a key={Math.random()} rel="noreferrer" target="_blank" href={url}>

@@ -17,7 +17,7 @@ const navs = [
 
 const Navbar = () => {
   function handleScroll(id: string) {
-    if(window.location.pathname !== '/') window.location.assign('/')
+    if (window.location.pathname !== '/') window.location.assign('/')
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });

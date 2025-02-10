@@ -35,7 +35,7 @@ const Accessibility = () => {
                 <p className="text-(--sub-header)">כל העמודים באתר כל זכות עומדים בהנחיות הנגישות הבאות של ארגון <a target="_blank" rel="noreferrer noopener" className="external text" href="https://www.w3.org">World Wide Web Consortium</a> (ארגון תקינה לרשת האינטרנט):</p>
                 <ol className="text-(--sub-header)">
                     <li>
-                        <a target="_blank" rel="noreferrer noopener" className="external text" href="https://www.w3.org/TR/WCAG20/">הנחיות נגישות לתוכן (Web Content Accessibility Guidelines 2.0)</a>. הנחיות אלו מעוגנות גם בתקן הישראלי לנגישות (ת"י 5568); זהו תקן מחייב לפי תקנה 35 של תקנות נגישות השירות, לפי חוק שוויון זכויות לאנשים עם מוגבלות. בקישור הבא ישנו <a target="_blank" rel="noreferrer noopener" class="external text" href="https://www.isoc.org.il/files/w3c-wai/guidelines.html" data-raofz="18">תרגום לעברית של הנחיות WCAG 2.0</a>  (באדיבות איגוד האינטרנט הישראלי).</li>
+                        <a target="_blank" rel="noreferrer noopener" className="external text" href="https://www.w3.org/TR/WCAG20/">הנחיות נגישות לתוכן (Web Content Accessibility Guidelines 2.0)</a>. הנחיות אלו מעוגנות גם בתקן הישראלי לנגישות (ת"י 5568); זהו תקן מחייב לפי תקנה 35 של תקנות נגישות השירות, לפי חוק שוויון זכויות לאנשים עם מוגבלות. בקישור הבא ישנו <a target="_blank" rel="noreferrer noopener" className="external text" href="https://www.isoc.org.il/files/w3c-wai/guidelines.html">תרגום לעברית של הנחיות WCAG 2.0</a>  (באדיבות איגוד האינטרנט הישראלי).</li>
                     <li>הנחיות נגישות ליישומי רשת (WAI-ARIA) - מיועדות לסייע בהנגשת אתרים הכוללים רכיבים מורכבים (לדוגמה: חלונות נפתחים, גלריית תמונות וכד').</li></ol>
             </div>
             <Footer />

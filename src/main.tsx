@@ -1,12 +1,12 @@
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.tsx";
+import AccessibilityPage from "@/components/accessibility/accessibility";
 import "@/fonts/Auro Rumpthut.otf";
 import "@/fonts/Auro Rumpthut.ttf";
 import "@/fonts/VarelaRound-Regular.ttf";
-import { BrowserRouter, Route, Routes } from "react-router";
 import { Accessibility } from 'accessibility';
-import AccessibilityPage from "@/components/accessibility/accessibility";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router";
+import App from "./App.tsx";
+import "./index.css";
 
 const labels = {
     resetTitle: 'איפוס',
@@ -35,7 +35,6 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App />} />
-            {/* <Route path="*" element={<App />} /> */}
             <Route path="/accessibility" element={<AccessibilityPage />} />
         </Routes>
     </BrowserRouter>

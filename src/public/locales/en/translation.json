@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "title": "Shahar Dahan | Training for Results",
+    "homeAriaLabel": "Home"
+  }
+}

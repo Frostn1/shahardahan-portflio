@@ -6,5 +6,15 @@
     "contact": "צור קשר",
     "title": "שחר דהן | אימון לתוצאות",
     "homeAriaLabel": "לדף הבית"
+  },
+  "pages": {
+    "welcome": {
+      "name": "שחר דהן",
+      "title": "מאמן כושר וטריאתלון",
+
+      "visionTitle": "החזון שלי:",
+      "visionDescription": "לעזור לכם לממש את הפוטנציאל וליהנות מהדרך !",
+      "contactTitle": "צור קשר"
+    }
   }
 }

@@ -4,7 +4,7 @@
     "about": "About",
     "services": "Services",
     "contact": "Contact",
-    "title": "Shahar Dahan | Training for Results",
+    "title": "Shahar Dahan | Results Driven Coaching",
     "homeAriaLabel": "Home"
   },
   "pages": {
@@ -12,8 +12,39 @@
       "name": "Shahar Dahan",
       "title": "Triatholon & Fitness Coach",
       "visionTitle": "My Vision:",
-      "visionDescription": "To help you achieve your potential and enjoy the journey!",
-      "contactTitle": "Contact"
+      "visionDescription": "Helping athletes achieving their potential, while enjoying the journey",
+      "contactTitle": "Contact",
+      "marquee": {
+        "desk": "Riding & Having fun",
+        "masters": "Working on speed",
+        "self1": "Self Defense",
+        "pilates": "Pilates",
+        "studio": "Functional Training",
+        "studio1": "Strength & Cardio",
+        "bike": "Shahar Dahan",
+        "coffeebreak": "Coffee Break",
+        "masters1": "Bike Saturday",
+        "couplework": "Couple Workout",
+        "pilates1": "Pilates Mat",
+        "ironman1": "Ironman",
+        "gravel": "Gravel",
+        "brand": "Training for Results",
+        "epicisrael": "Epic Israel"
+      }
+    },
+    "services": {
+      "studio": {
+        "name": "Functional Training",
+        "description": "Functional training & pilates, personal and small group sessions."
+      },
+      "mtb": {
+        "name": "Mountain Bike",
+        "description": "Working on cardio, technique and flow in single track."
+      },
+      "triathlon": {
+        "name": "Triathlon Training",
+        "description": "Building a personalized training plan based on goals, including nutrition and recovery."
+      }
     }
   }
 }

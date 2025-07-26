@@ -1,32 +1,31 @@
 import React from "react";
 import HeroVideoDialog from "../magicui/hero-video-dialog";
+import { useTranslation } from "react-i18next";
 
 interface SingleServiceProps {
   name: string;
-  description: string;
   image: string;
   video?: string;
 }
 
 const SingleService: React.FC<SingleServiceProps> = ({
   name,
-  description,
   image,
   video,
 }) => {
+  const { t } = useTranslation();
   return (
     <div
       className={
-        "flex flex-row justify-between rounded-3xl box-border text-right transition duration-500 transform-gpu dark:bg-background dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
+        "flex flex-row justify-between rounded-3xl box-border transition duration-500 transform-gpu dark:bg-background dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
       }
     >
       <div className="p-3 box-border max-w-[63%] flex flex-col gap-1">
-        <h1 aria-label={name} className="text-[16px] md:text-xl">{name}</h1>
-        <p
-          dir="rtl"
-          className="text-(--subtext) text-[15px] sm:text-md max-w-sm md:text-md text-wrap"
-        >
-          {description}
+        <h1 aria-label={name} className="text-[16px] md:text-xl">
+          {t(`pages.services.${name}.name`)}
+        </h1>
+        <p className="text-(--subtext) text-[15px] sm:text-md max-w-sm md:text-md text-wrap">
+          {t(`pages.services.${name}.description`)}
         </p>
       </div>
       {video ? (
@@ -45,8 +44,6 @@ const SingleService: React.FC<SingleServiceProps> = ({
           alt="Image was here"
         />
       )}
-
-      {/*  */}
     </div>
   );
 };

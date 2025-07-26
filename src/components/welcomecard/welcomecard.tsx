@@ -14,10 +14,7 @@ const WelcomeCard = () => {
           <br />
           {t("pages.welcome.title")}
         </div>
-        <div
-          dir="rtl"
-          className="text-(--sub-header) text-xl lg:text-2xl text-center pb-2"
-        >
+        <div className="text-(--sub-header) text-xl lg:text-2xl text-center pb-2">
           {t("pages.welcome.visionTitle")}
           <br />
           {t("pages.welcome.visionDescription")}

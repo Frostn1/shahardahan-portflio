@@ -1,11 +1,18 @@
-import ContactForm from "@/components/contactform/contactform";
-import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { ImagesMarquee } from "./imagemarquee";
 import { useTranslation } from "react-i18next";
 import { RainbowButton } from "../magicui/rainbow-button";
 
 const WelcomeCard = () => {
   const { t } = useTranslation();
+  function handleScroll() {
+    const id = "contact";
+    if (window.location.pathname !== "/") window.location.assign("/");
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <div id={"welcome"} className="h-full grid grid-rows-2 gap-0 xl:gap-30">
       <div className="p-5 sm:p-0 flex flex-col items-center justify-center bg-green-0 gap-7">
@@ -19,14 +26,18 @@ const WelcomeCard = () => {
           <br />
           {t("pages.welcome.visionDescription")}
         </div>
-        <Dialog>
+        <RainbowButton onClick={handleScroll} variant={"outline"}>
+          {t("pages.welcome.contactTitle")}
+        </RainbowButton>
+
+        {/* <Dialog>
           <DialogTrigger asChild>
             <RainbowButton variant={"outline"}>
               {t("pages.welcome.contactTitle")}
             </RainbowButton>
           </DialogTrigger>
           <ContactForm />
-        </Dialog>
+        </Dialog> */}
       </div>
       <ImagesMarquee />
     </div>

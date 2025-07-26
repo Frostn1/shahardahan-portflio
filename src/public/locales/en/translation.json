@@ -45,6 +45,17 @@
         "name": "Triathlon Training",
         "description": "Building a personalized training plan based on goals, including nutrition and recovery."
       }
+    },
+    "contact": {
+      "callToAction": "Ready to start?",
+      "socials": {
+        "title": "Find me on social media !",
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "tiktok": "TikTok",
+        "whatsapp": "WhatsApp"
+      },
+      "whatsappText": "I would like to receive additional information"
     }
   }
 }

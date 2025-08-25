@@ -1,50 +1,45 @@
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
-import Navbar from "@/components/navbar/navbar";
-import Page from "@/components/page/page";
-import Services from "@/components/services/services";
-import Contact from "./components/contact/contact";
+import Navbar from "@/components/layout/navbar";
+import Page from "@/components/pages/page";
+import Contact from "./components/pages/contact";
 import { Ripple } from "./components/magicui/ripple";
-import WelcomeCard from "./components/welcomecard/welcomecard";
 import Footer from "./components/footer/footer";
-const pages = [
-  {
-    El: WelcomeCard,
-    id: "home",
-  },
-  {
-    El: Services,
-    id: "services",
-  },
+import { BrowserRouter, Routes, Route } from "react-router";
+import { Layout } from "./components/layout/layout";
+import { Dashboard } from "./components/layout/dashboard";
+import { Page404 } from "./components/pages/page404";
+import { Helmet } from "react-helmet";
 
-  {
-    El: Contact,
-    id: "contact",
-  },
-];
-// 00adf2
 function App() {
   return (
-    <div className="h-full w-full font-[Varela] ">
-      <Navbar />
-      <ScrollProgress className="top-[60px]" />
-      <Ripple className={"fixed"} />
-      <div className={"h-screen no-scrollbar scroll-auto pt-[80px]"}>
-        {pages.map(({ El, id }, idx) => (
-          <Page key={id} id={id}>
-            <BlurFade
-              className="relative h-[calc(100%-60px)]"
-              key={id}
-              delay={0.25 + idx * 0.05}
-              inView
-            >
-              <El />
-            </BlurFade>
-          </Page>
-        ))}
-        <Footer />
-      </div>
-    </div>
+    <span className="font-[Varela]">
+      <Helmet>
+        <title>שחר דהן</title>
+        <meta
+          name="description"
+          content="סובלים מכאבי גב ? אני תום דהן, מטפל בכאבי גב, מציע פתרונות מותאמים אישית להקלה על כאבים ושיפור איכות החיים."
+        />
+        <meta property="og:title" content="שחר דהן" />
+        <meta
+          property="og:description"
+          content="סובלים מכאבי גב ? אני תום דהן, מטפל בכאבי גב, מציע פתרונות מותאמים אישית להקלה על כאבים ושיפור איכות החיים."
+        />
+        <meta
+          property="og:image"
+          content="https://ik.imagekit.io/seandahan/tom-vsl.webm/ik-thumbnail.jpg"
+        />
+      </Helmet>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Dashboard />} />
+            {/* <Route path="/accessibility" element={<Accessibility />} /> */}
+            <Route path="*" element={<Page404 />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </span>
   );
 }
 

@@ -47,7 +47,7 @@ const Contact = () => {
         <Button asChild variant={"ghost"} className="text-center">
           <a href="tel:+972525216872">
             {" "}
-            <div className="text-xs md:text-md">052-5216872</div>{" "}
+            <div className="text-xs md:text-md">+97252-5216872</div>{" "}
           </a>
         </Button>
       ),

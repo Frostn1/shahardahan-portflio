@@ -1,12 +1,12 @@
 import SingleService from "./singleservice";
 const services = [
-  // {
-  //   name: "studio",
-  //   description:
-  //     "אימונים אישיים וקבוצות קטנות. " + "אימונים פונקציונליים ופילאטיס מזרן",
-  //   image: "/studio-clean2.jpg",
-  //   video: "/studio.mp4",
-  // },
+  {
+    name: "studio",
+    description:
+      "אימונים אישיים וקבוצות קטנות. " + "אימונים פונקציונליים ופילאטיס מזרן",
+    image: "/studio-clean2.jpg",
+    video: "/studio.mp4",
+  },
   {
     name: "mtb",
     image: "/masters.jpg",
@@ -19,7 +19,7 @@ const services = [
 ];
 const Services = () => {
   return (
-    <div className="grid p-5 lg:grid-cols-2 lg:grid-rows-1 gap-10">
+    <div className="grid pb-20 p-5 lg:grid-cols-2 lg:grid-rows-2 gap-10">
       {services.map(({ name, image, video }) => (
         <SingleService
           key={Math.random()}

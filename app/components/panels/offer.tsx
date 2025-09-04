@@ -1,3 +1,4 @@
+import { getDictionary } from "../../lib/get-dictionary";
 import {
   Card,
   CardContent,
@@ -6,7 +7,6 @@ import {
   CardTitle,
 } from "../ui/card";
 import { Bandage, Bike, WavesLadder } from "lucide-react";
-import { getDictionary } from "@/lib/get-dictionary";
 
 export interface BoxProps {
   title: string;

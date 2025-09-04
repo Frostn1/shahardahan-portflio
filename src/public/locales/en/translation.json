@@ -3,16 +3,17 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "contact": "Connect",
+    "contact": "Contact",
     "title": "Shahar Dahan | Results Driven Coaching",
     "homeAriaLabel": "Home"
   },
   "pages": {
     "welcome": {
       "name": "Shahar Dahan",
-      "title": "Triathlon & Fitness Coach",
-      "visionDescription": "Helping athletes achieve their goal using smart planning & state of the art tracking.",
-      "contactTitle": "Connect",
+      "title": "Triatholon & Fitness Coach",
+      "visionTitle": "My Vision:",
+      "visionDescription": "Helping athletes achieving their potential, while enjoying the journey",
+      "contactTitle": "Contact",
       "marquee": {
         "desk": "Riding & Having fun",
         "masters": "Working on speed",
@@ -29,16 +30,6 @@
         "gravel": "Gravel",
         "brand": "Training for Results",
         "epicisrael": "Epic Israel"
-      }
-    },
-    "offer": {
-      "offer1": {
-        "title": "Training plan",
-        "description": "I will build & track a killer training plan to help you acheive your goals."
-      },
-      "offer2": {
-        "title": "State of the art technology",
-        "description": "In partnership with state of the art tracking and planning technologies to give you the best possible data."
       }
     },
     "services": {

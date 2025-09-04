@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 function Footer() {
   return (
-    <div className="flex flex-col items-center gap-3 text-(--subtext)">
+    <div className="z-20 bottom-0 w-full flex flex-col items-center gap-3 text-(--subtext)">
       <Button variant={"link"} asChild>
         <a href="accessibility">הצהרת נגישות</a>
       </Button>

@@ -6,7 +6,15 @@ import Footer from "./footer";
 import { getDictionary } from "@/lib/get-dictionary";
 import Offer from "../panels/offer";
 
-const pages = [
+interface PanelInterface<> {
+  El: React.ComponentType<{
+    dictionary: any;
+  }>;
+  id: string;
+  bgColor?: string;
+}
+
+const pages: PanelInterface[] = [
   {
     El: Home,
     id: "home",

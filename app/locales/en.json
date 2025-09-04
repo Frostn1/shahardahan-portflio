@@ -29,6 +29,10 @@
       "offer2": {
         "title": "State of the art technology",
         "description": "In partnership with state of the art tracking and planning technologies to give you the best possible data."
+      },
+      "offer3": {
+        "title": "תוכנית אימון אישית לטריאתלון",
+        "description": "ליווי אישי וצמוד לאורך כל הדרך\nעבודה על חיזוק שלושת הענפים (שחיה, רכיבה וריצה)\nעבודה על שחיה במים פתוחים וביצוע החלפות\nתוכנית שבועית מותאמת בתוכנת TP\nקשר רציף בוואטסאפ לשאלות והתאמות"
       }
     },
     "contact": {

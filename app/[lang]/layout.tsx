@@ -15,11 +15,11 @@ export async function generateStaticParams() {
 export default async function RootLayout(
   props: Readonly<{
     children: React.ReactNode;
-    params: Promise<{ lang: Locale }>;
+    params: Promise<{ lang: string }>;
   }>,
 ) {
   const params = await props.params;
-  const dictionary = await getDictionary(params.lang);
+  const dictionary = await getDictionary(params.lang as Locale);
   return (
     <html lang={params.lang} className="dark" dir="rtl">
       <head>

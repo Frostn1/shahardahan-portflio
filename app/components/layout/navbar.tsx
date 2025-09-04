@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { getDictionary } from "@/lib/get-dictionary";
 import SiteLogo from "@/assets/logo.png";

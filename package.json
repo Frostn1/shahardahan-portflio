@@ -2,6 +2,7 @@
   "name": "shahar-dahan",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -11,10 +12,12 @@
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.6.1",
     "@radix-ui/react-slot": "^1.2.3",
+    "@types/negotiator": "^0.6.4",
     "axios": "^1.11.0",
     "cheerio": "^1.1.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "eslint-plugin-react-refresh": "^0.4.20",
     "lucide-react": "^0.542.0",
     "mongoose": "^8.17.2",
     "motion": "^12.23.12",
@@ -22,6 +25,7 @@
     "next": "^15.5.2",
     "next-i18next": "^15.4.2",
     "postcss": "^8.5.6",
+    "radix-ui": "^1.4.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-helmet": "^6.1.0",

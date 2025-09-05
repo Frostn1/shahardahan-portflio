@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { getDictionary } from "@/lib/get-dictionary";
 import SiteLogo from "@/assets/logo.png";
+import Link from "next/link";
 
 const navs = [
   {
@@ -8,8 +9,12 @@ const navs = [
     id: "home",
   },
   {
+    name: "offer",
+    id: "offer",
+  },
+  {
     name: "contact",
-    id: "connect",
+    id: "contact",
   },
 ];
 
@@ -32,7 +37,7 @@ const Navbar = ({
         "fixed z-20 top-0 flex w-full h-[60px] items-center justify-between box-border pr-2 sm:pr-5 pl-5 md:pr-10 md:pl-10 bg-background"
       }
     >
-      <a
+      <Link
         aria-label={dictionary.homeAriaLabel}
         accessKey="z"
         className="flex flex-row items-center gap-2"
@@ -41,7 +46,7 @@ const Navbar = ({
       >
         <img src={SiteLogo.src} className="h-11" />
         <h1 className="hidden sm:grid text-xl">{dictionary.title}</h1>
-      </a>
+      </Link>
 
       <div className="flex h-5 flex-row items-center">
         {navs.map(({ name, id }: { name: string; id: string }) => (
@@ -51,9 +56,9 @@ const Navbar = ({
             // onClick={() => handleScroll(id)}
             variant={"link"}
           >
-            <a className="text-[15px] sm:text-xs md:text-sm">
+            <Link href={`#${id}`} className="text-[15px] sm:text-xs md:text-sm">
               {dictionary[name as keyof typeof dictionary]}
-            </a>
+            </Link>
           </Button>
         ))}
       </div>

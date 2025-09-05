@@ -3,8 +3,8 @@ import Home from "../panels/home";
 import Contact from "../panels/contact";
 import Panel from "../panels/panel";
 import Footer from "./footer";
-import { getDictionary } from "@/lib/get-dictionary";
 import Offer from "../panels/offer";
+import { getDictionary } from "../../lib/get-dictionary";
 
 interface PanelInterface<> {
   El: React.ComponentType<{

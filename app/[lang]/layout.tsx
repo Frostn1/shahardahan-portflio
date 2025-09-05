@@ -1,7 +1,7 @@
-import { getDictionary } from "@/lib/get-dictionary";
 import { i18n, Locale } from "../../i18n-config";
+import Navbar from "../components/layout/navbar";
+import { getDictionary } from "../lib/get-dictionary";
 import "./globals.css";
-import Navbar from "@/components/layout/navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,9 +21,13 @@ export default async function RootLayout(
   const params = await props.params;
   const dictionary = await getDictionary(params.lang as Locale);
   return (
-    <html lang={params.lang} className="dark" dir="rtl">
+    <html
+      lang={params.lang}
+      className="dark"
+      dir={params.lang === "he" ? "rtl" : "ltr"}
+    >
       <head>
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="icon" type="image/svg+xml" href="/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>שחר דהן</title>
         <meta

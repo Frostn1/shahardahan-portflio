@@ -4,7 +4,7 @@ import React from "react";
 const About = ({
   dictionary,
 }: {
-  dictionary: Awaited<ReturnType<typeof getDictionary>>["main"]["about"];
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["main"]["home"];
 }) => {
   return (
     <div className="flex flex-col items-center justify-center">

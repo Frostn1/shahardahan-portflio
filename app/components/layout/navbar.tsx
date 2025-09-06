@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { getDictionary } from "@/lib/get-dictionary";
 import SiteLogo from "@/assets/logo.png";
 import Link from "next/link";
+import React = require("react");
 
 const navs = [
   {
@@ -23,14 +24,6 @@ const Navbar = ({
 }: {
   dictionary: Awaited<ReturnType<typeof getDictionary>>["navbar"];
 }) => {
-  // function handleScroll(id: string) {
-  //   if (window.location.pathname !== "/") window.location.assign("/");
-  //   const element = document.getElementById(id);
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // }
-
   return (
     <nav
       className={

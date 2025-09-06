@@ -5,6 +5,7 @@ import Panel from "../panels/panel";
 import Footer from "./footer";
 import Offer from "../panels/offer";
 import { getDictionary } from "../../lib/get-dictionary";
+import About from "../panels/about";
 
 interface PanelInterface<> {
   El: React.ComponentType<{
@@ -18,6 +19,10 @@ const pages: PanelInterface[] = [
   {
     El: Home,
     id: "home",
+  },
+  {
+    El: About,
+    id: "about",
   },
   {
     El: Offer,

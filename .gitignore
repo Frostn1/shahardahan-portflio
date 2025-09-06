@@ -25,3 +25,4 @@ dist-ssr
 .next/*
 bun.lock
 bun.lock
+*.lock

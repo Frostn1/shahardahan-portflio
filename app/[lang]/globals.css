@@ -7,7 +7,9 @@
     scrollbar-width: none; /* Firefox */
     font-family: Verlan, sans-serif;
 }
-
+html {
+    @apply scroll-smooth;
+}
 :root {
     font-family: "Roboto-Slab Varela";
     --color-1: oklch(66.2% 0.225 25.9);

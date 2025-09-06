@@ -5,7 +5,7 @@ import WhatsappLogo from "@/assets/whatsapp.png";
 import { PhoneCallIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import { getDictionary } from "@/lib/get-dictionary";
-import React = require("react");
+import React from "react";
 
 const socials = [
   {

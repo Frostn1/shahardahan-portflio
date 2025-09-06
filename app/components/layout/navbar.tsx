@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { getDictionary } from "@/lib/get-dictionary";
 import SiteLogo from "@/assets/logo.png";
 import Link from "next/link";
-import React = require("react");
+import React from "react";
 
 const navs = [
   {

@@ -1,5 +1,5 @@
 import { getDictionary } from "@/lib/get-dictionary";
-import React = require("react");
+import React from "react";
 
 const About = ({
   dictionary,

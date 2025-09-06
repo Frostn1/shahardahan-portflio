@@ -2,7 +2,7 @@
 import { getDictionary } from "@/lib/get-dictionary";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
-import React = require("react");
+import React from "react";
 const Home = ({
   dictionary,
 }: {

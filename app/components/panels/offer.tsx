@@ -1,5 +1,5 @@
 "use client";
-import React = require("react");
+import React from "react";
 import { getDictionary } from "../../lib/get-dictionary";
 import { Bandage, Bike, WavesLadder } from "lucide-react";
 import Box from "../ui/box";

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "motion/react";
 
 interface BoxData {
   id: number;
@@ -18,27 +18,30 @@ interface AnimatedBoxesProps {
 const defaultBoxes: BoxData[] = [
   {
     id: 1,
-    color: 'from-blue-500 to-purple-600',
-    title: 'First Box',
-    content: 'This is the content of the first box with a beautiful blue to purple gradient.'
+    color: "from-blue-500 to-purple-600",
+    title: "First Box",
+    content:
+      "This is the content of the first box with a beautiful blue to purple gradient.",
   },
   {
     id: 2,
-    color: 'from-green-500 to-teal-600',
-    title: 'Second Box',
-    content: 'This is the content of the second box with a refreshing green to teal gradient.'
+    color: "from-green-500 to-teal-600",
+    title: "Second Box",
+    content:
+      "This is the content of the second box with a refreshing green to teal gradient.",
   },
   {
     id: 3,
-    color: 'from-orange-500 to-red-600',
-    title: 'Third Box',
-    content: 'This is the content of the third box with a vibrant orange to red gradient.'
-  }
+    color: "from-orange-500 to-red-600",
+    title: "Third Box",
+    content:
+      "This is the content of the third box with a vibrant orange to red gradient.",
+  },
 ];
 
 export default function AnimatedBoxes({
   autoAdvanceTime = 20,
-  boxes = defaultBoxes
+  boxes = defaultBoxes,
 }: AnimatedBoxesProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [progress, setProgress] = useState(0);
@@ -73,7 +76,7 @@ export default function AnimatedBoxes({
         if (prev >= 100) {
           return 100;
         }
-        return prev + (100 / (autoAdvanceTime * 10)); // Update every 100ms
+        return prev + 100 / (autoAdvanceTime * 10); // Update every 100ms
       });
     }, 100);
 
@@ -101,7 +104,7 @@ export default function AnimatedBoxes({
         if (prev >= 100) {
           return 100;
         }
-        return prev + (100 / (autoAdvanceTime * 10));
+        return prev + 100 / (autoAdvanceTime * 10);
       });
     }, 100);
 
@@ -118,7 +121,8 @@ export default function AnimatedBoxes({
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
-      if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+      if (progressIntervalRef.current)
+        clearInterval(progressIntervalRef.current);
     };
   }, [currentIndex, autoAdvanceTime, isPaused]);
 
@@ -149,7 +153,7 @@ export default function AnimatedBoxes({
             transition={{
               duration: 0.5,
               ease: "easeInOut",
-              scale: { type: "spring", stiffness: 300, damping: 30 }
+              scale: { type: "spring", stiffness: 300, damping: 30 },
             }}
             className={`absolute inset-0 bg-gradient-to-br ${boxes[currentIndex].color} backdrop-blur-sm`}
           >
@@ -189,7 +193,8 @@ export default function AnimatedBoxes({
       <div className="mt-4 w-full">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm text-gray-600">
-            Auto advance in {Math.ceil(autoAdvanceTime - (progress / 100) * autoAdvanceTime)}s
+            Auto advance in{" "}
+            {Math.ceil(autoAdvanceTime - (progress / 100) * autoAdvanceTime)}s
           </span>
           <div className="flex gap-2">
             {isPaused ? (
@@ -228,8 +233,8 @@ export default function AnimatedBoxes({
             onClick={() => goToBox(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === currentIndex
-                ? 'bg-blue-500 scale-125'
-                : 'bg-gray-300 hover:bg-gray-400'
+                ? "bg-blue-500 scale-125"
+                : "bg-gray-300 hover:bg-gray-400"
             }`}
           />
         ))}
@@ -247,7 +252,12 @@ export default function AnimatedBoxes({
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
           </svg>
         </button>
       </div>
@@ -263,7 +273,12 @@ export default function AnimatedBoxes({
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
           </svg>
         </button>
       </div>

@@ -1,0 +1,42 @@
+{
+  "navbar": {
+    "home": "Home",
+    "offer": "Offer",
+    "contact": "Contact",
+    "title": "Shahar Dahan | Results Driven Coaching",
+    "homeAriaLabel": "Home"
+  },
+  "main": {
+    "home": {
+      "name": "Shahar Dahan",
+      "title": "Triathlon & Fitness Coach",
+      "visionDescription": "Helping athletes achieve their goal using smart planning & state of the art tracking.",
+      "contactTitle": "Connect"
+    },
+    "offer": {
+      "offer1": {
+        "title": "Personal Training Program After Injury",
+        "description": "Personal and close guidance throughout the process\nStrengthening the body, improving range of motion and flexibility\nGradual return to general fitness\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
+      },
+      "offer2": {
+        "title": "Personal Cycling Training Program",
+        "description": "Personal and close guidance throughout the process\nTraining focused on strength (aerobic, anaerobic, and explosive power)\nCycling technique and control workouts\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
+      },
+      "offer3": {
+        "title": "Personal Triathlon Training Program",
+        "description": "Personal and close guidance throughout the process\nTraining for all three disciplines (swimming, cycling, and running)\nOpen water swimming practice and transition training\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
+      }
+    },
+    "contact": {
+      "callToAction": "Ready to start?",
+      "socials": {
+        "title": "Find me on social media !",
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "tiktok": "TikTok",
+        "whatsapp": "WhatsApp"
+      },
+      "whatsappText": "I would like to receive additional information"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# robots.txt for Shahar Dahan - Triathlon Coach Website
+
+User-agent: *
+Allow: /
+
+# Block Next.js internal paths
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap (update the URL with your actual domain)
+Sitemap: https://www.shahardahan.com/sitemap.xml

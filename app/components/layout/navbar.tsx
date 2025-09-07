@@ -3,6 +3,7 @@ import { getDictionary } from "@/lib/get-dictionary";
 import SiteLogo from "@/assets/logo.png";
 import Link from "next/link";
 import React from "react";
+import { LanguageSwitcher } from "../ui/locale-switcher";
 
 const navs = [
   {
@@ -54,6 +55,7 @@ const Navbar = ({
             </Link>
           </Button>
         ))}
+        <LanguageSwitcher />
       </div>
     </nav>
   );

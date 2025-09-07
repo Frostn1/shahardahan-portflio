@@ -35,7 +35,7 @@ const Navbar = ({
         aria-label={dictionary.homeAriaLabel}
         accessKey="z"
         className="flex flex-row items-center gap-2"
-        href="/"
+        href="#home"
         // onClick={() => window.location.assign("/")}
       >
         <img src={SiteLogo.src} className="h-11" />
@@ -50,7 +50,7 @@ const Navbar = ({
             // onClick={() => handleScroll(id)}
             variant={"link"}
           >
-            <Link href={`#${id}`} className="text-[15px] sm:text-xs md:text-sm">
+            <Link href={`#${id}`} className="text-[10px] sm:text-xs md:text-sm">
               {dictionary[name as keyof typeof dictionary]}
             </Link>
           </Button>

@@ -39,7 +39,10 @@ export function LanguageSwitcher() {
         {i18n.locales.map((locale) => {
           // Strip first segment if it’s a locale and replace with new one
           const segments = pathname?.split("/") ?? [];
-          if (segments.length > 1 && i18n.locales.includes(segments[1])) {
+          if (
+            segments.length > 1 &&
+            i18n.locales.includes(segments[1] as keyof typeof i18n.locales.keys)
+          ) {
             segments[1] = locale;
           } else {
             segments.splice(1, 0, locale);

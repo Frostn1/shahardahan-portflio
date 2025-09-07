@@ -32,7 +32,7 @@ const Offer = ({
   const [offerIndex, setOfferIndex] = useState(0);
   const offer = offers[offerIndex];
   return (
-    <div className="h-full grid grid-rows-1 grid-cols-3 gap-10">
+    <div className="h-full flex flex-col md:grid grid-rows-1 grid-cols-3 gap-10">
       {offers.map((offer) => (
         <Box
           key={offer.name}

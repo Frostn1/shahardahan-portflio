@@ -1,33 +1,37 @@
-'use client';
+"use client";
 
-import AnimatedBoxes from './AnimatedBoxes';
+import AnimatedBoxes from "./AnimatedBoxes";
 
 // Custom box data for demonstration
 const customBoxes = [
   {
     id: 1,
-    color: 'from-indigo-600 via-purple-600 to-pink-600',
-    title: 'Welcome',
-    content: 'Experience smooth transitions and beautiful gradients with our animated box component.'
+    color: "from-indigo-600 via-purple-600 to-pink-600",
+    title: "Welcome",
+    content:
+      "Experience smooth transitions and beautiful gradients with our animated box component.",
   },
   {
     id: 2,
-    color: 'from-emerald-500 via-teal-500 to-cyan-500',
-    title: 'Features',
-    content: 'Auto-advance timer, scroll navigation, pause on hover, and fully customizable content.'
+    color: "from-emerald-500 via-teal-500 to-cyan-500",
+    title: "Features",
+    content:
+      "Auto-advance timer, scroll navigation, pause on hover, and fully customizable content.",
   },
   {
     id: 3,
-    color: 'from-amber-500 via-orange-500 to-red-500',
-    title: 'Interactive',
-    content: 'Use mouse wheel, click navigation arrows, or dots to control the presentation.'
+    color: "from-amber-500 via-orange-500 to-red-500",
+    title: "Interactive",
+    content:
+      "Use mouse wheel, click navigation arrows, or dots to control the presentation.",
   },
   {
     id: 4,
-    color: 'from-rose-500 via-pink-500 to-fuchsia-500',
-    title: 'Responsive',
-    content: 'Glass morphism design that looks great on any device with smooth animations.'
-  }
+    color: "from-rose-500 via-pink-500 to-fuchsia-500",
+    title: "Responsive",
+    content:
+      "Glass morphism design that looks great on any device with smooth animations.",
+  },
 ];
 
 export default function AnimatedBoxesExample() {
@@ -40,8 +44,8 @@ export default function AnimatedBoxesExample() {
             Animated Boxes Demo
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            An interactive component with auto-advancing slides, scroll navigation,
-            and beautiful glass morphism effects.
+            An interactive component with auto-advancing slides, scroll
+            navigation, and beautiful glass morphism effects.
           </p>
         </div>
 
@@ -58,10 +62,7 @@ export default function AnimatedBoxesExample() {
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
             Custom Content & Faster Timer (10 seconds)
           </h2>
-          <AnimatedBoxes
-            boxes={customBoxes}
-            autoAdvanceTime={10}
-          />
+          <AnimatedBoxes boxes={customBoxes} autoAdvanceTime={10} />
         </div>
 
         {/* Usage Instructions */}

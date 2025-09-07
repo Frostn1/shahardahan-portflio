@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 .next/*
 bun.lock
-bun.lock
 *.lock

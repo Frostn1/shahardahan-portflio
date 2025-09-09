@@ -4,21 +4,7 @@ import SiteLogo from "@/assets/logo.png";
 import Link from "next/link";
 import React from "react";
 import { LanguageSwitcher } from "../ui/locale-switcher";
-
-const navs = [
-  {
-    name: "home",
-    id: "home",
-  },
-  {
-    name: "offer",
-    id: "offer",
-  },
-  {
-    name: "contact",
-    id: "contact",
-  },
-];
+import { panels } from "./panels";
 
 const Navbar = ({
   dictionary,
@@ -43,7 +29,7 @@ const Navbar = ({
       </Link>
 
       <div className="flex h-5 flex-row items-center">
-        {navs.map(({ name, id }: { name: string; id: string }) => (
+        {panels.map(({ name, id }: { name: string; id: string }) => (
           <Button
             aria-label={name}
             key={id}

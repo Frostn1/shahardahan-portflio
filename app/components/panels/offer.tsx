@@ -1,48 +1,27 @@
-"use client";
 import React from "react";
 import { getDictionary } from "../../lib/get-dictionary";
-import { Bandage, Bike, WavesLadder } from "lucide-react";
 import Box from "../ui/box";
-import { useState } from "react";
 
 interface OfferInterface {
-  name: string;
-  image: string;
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  title: string;
+  description: string;
 }
-const offers: OfferInterface[] = [
-  {
-    name: "offer1",
-    image: "trainingpeaks-graph.png",
-    icon: Bandage,
-  },
-  { name: "offer2", image: "trainingpeaks-main.png", icon: Bike },
-  {
-    name: "offer3",
-    image: "",
-    icon: WavesLadder,
-  },
-];
 
 const Offer = ({
   dictionary,
 }: {
   dictionary: Awaited<ReturnType<typeof getDictionary>>["main"]["offer"];
 }) => {
-  const [offerIndex, setOfferIndex] = useState(0);
-  const offer = offers[offerIndex];
+  const offers = dictionary.offers;
   return (
-    <div className="h-full flex flex-col md:grid grid-rows-1 grid-cols-3 gap-10">
-      {offers.map((offer) => (
-        <Box
-          key={offer.name}
-          title={dictionary[offer.name as keyof typeof dictionary].title}
-          description={
-            dictionary[offer.name as keyof typeof dictionary].description
-          }
-          Icon={offer.icon}
-        />
-      ))}
+    <div className="text-md lg:text-lg font-semibold flex flex-col gap-2 md:gap-5">
+      {dictionary.title}
+
+      <div className="h-full flex flex-col md:grid grid-rows-1 grid-cols-3 gap-10">
+        {offers.map((offer: OfferInterface) => (
+          <Box title={offer.title} description={offer.description} />
+        ))}
+      </div>
     </div>
   );
 };

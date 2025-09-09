@@ -6,34 +6,9 @@ import Footer from "./footer";
 import Offer from "../panels/offer";
 import { getDictionary } from "../../lib/get-dictionary";
 import About from "../panels/about";
-
-interface PanelInterface<> {
-  El: React.ComponentType<{
-    dictionary: any;
-  }>;
-  id: string;
-  bgColor?: string;
-}
-
-const pages: PanelInterface[] = [
-  {
-    El: Home,
-    id: "home",
-  },
-  {
-    El: About,
-    id: "about",
-  },
-  {
-    El: Offer,
-    id: "offer",
-  },
-  {
-    El: Contact,
-    id: "contact",
-    bgColor: "bg-ribbon",
-  },
-];
+import CommonQuestions from "../panels/common-questions";
+import { panels } from "./panels";
+import React = require("react");
 
 export const Main = ({
   dictionary,
@@ -43,8 +18,8 @@ export const Main = ({
   return (
     <div className="h-full w-full ">
       <div className={"h-screen no-scrollbar scroll-auto"}>
-        {pages.map(({ El, id, bgColor }, idx) => (
-          <Panel key={id} id={id} bgColor={bgColor} className="z-10">
+        {panels.map(({ El, id }, idx) => (
+          <Panel key={id} id={id} className="z-10">
             <BlurFade
               className="relative h-[100%]"
               key={id}

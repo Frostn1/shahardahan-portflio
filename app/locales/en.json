@@ -2,6 +2,8 @@
   "navbar": {
     "home": "Home",
     "offer": "Offer",
+    "about": "About",
+    "common-questions": "Common Questions",
     "contact": "Contact",
     "title": "Shahar Dahan | Results Driven Coaching",
     "homeAriaLabel": "Home"
@@ -14,18 +16,38 @@
       "contactTitle": "Connect"
     },
     "offer": {
-      "offer1": {
-        "title": "Personal Training Program After Injury",
-        "description": "Personal and close guidance throughout the process\nStrengthening the body, improving range of motion and flexibility\nGradual return to general fitness\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
-      },
-      "offer2": {
-        "title": "Personal Cycling Training Program",
-        "description": "Personal and close guidance throughout the process\nTraining focused on strength (aerobic, anaerobic, and explosive power)\nCycling technique and control workouts\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
-      },
-      "offer3": {
-        "title": "Personal Triathlon Training Program",
-        "description": "Personal and close guidance throughout the process\nTraining for all three disciplines (swimming, cycling, and running)\nOpen water swimming practice and transition training\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
-      }
+      "title": "What I Offer",
+      "offers": [
+        {
+          "title": "Personal Training Program After Injury",
+          "description": "Personal and close guidance throughout the process\nStrengthening the body, improving range of motion and flexibility\nGradual return to general fitness\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
+        },
+        {
+          "title": "Personal Cycling Training Program",
+          "description": "Personal and close guidance throughout the process\nTraining focused on strength (aerobic, anaerobic, and explosive power)\nCycling technique and control workouts\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
+        },
+        {
+          "title": "Personal Triathlon Training Program",
+          "description": "Personal and close guidance throughout the process\nTraining for all three disciplines (swimming, cycling, and running)\nOpen water swimming practice and transition training\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
+        }
+      ]
+    },
+    "common-questions": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "How does the training method work?",
+          "answer": "A personal and professional plan tailored to the athlete’s goals\nOngoing weekly communication\nWorkout analysis and constant feedback using advanced technology\nBriefings before races and important workouts"
+        },
+        {
+          "question": "Who are the trainings for?",
+          "answer": "Beginner triathletes with basic knowledge\nProfessional triathletes who want to improve their performance and reach new heights\nCyclists of all levels\nAthletes who want to recover from injury effectively"
+        },
+        {
+          "question": "Am I ready for a professional training plan?",
+          "answer": "If you are preparing for a triathlon or cycling competition\nEnjoy independent training\nLooking for a coach who will provide personal attention, close guidance, and a professional training plan\nWant to balance family life with your passion for sports\nYou’ve come to the right place!"
+        }
+      ]
     },
     "contact": {
       "callToAction": "Ready to start?",

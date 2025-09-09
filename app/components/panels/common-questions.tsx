@@ -1,7 +1,6 @@
 import { getDictionary } from "@/lib/get-dictionary";
 import Box from "../ui/box";
 
-import React = require("react");
 interface CommonQuestion {
   question: string;
   answer: string;

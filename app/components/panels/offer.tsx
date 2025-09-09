@@ -18,8 +18,12 @@ const Offer = ({
       {dictionary.title}
 
       <div className="h-full flex flex-col md:grid grid-rows-1 grid-cols-3 gap-10">
-        {offers.map((offer: OfferInterface) => (
-          <Box title={offer.title} description={offer.description} />
+        {offers.map((offer: OfferInterface, index: number) => (
+          <Box
+            key={index}
+            title={offer.title}
+            description={offer.description}
+          />
         ))}
       </div>
     </div>

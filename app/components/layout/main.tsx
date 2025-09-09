@@ -1,14 +1,8 @@
 import { BlurFade } from "@/components/magicui/blur-fade";
-import Home from "../panels/home";
-import Contact from "../panels/contact";
 import Panel from "../panels/panel";
 import Footer from "./footer";
-import Offer from "../panels/offer";
 import { getDictionary } from "../../lib/get-dictionary";
-import About from "../panels/about";
-import CommonQuestions from "../panels/common-questions";
 import { panels } from "./panels";
-import React = require("react");
 
 export const Main = ({
   dictionary,

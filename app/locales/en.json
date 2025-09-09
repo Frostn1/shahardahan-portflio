@@ -12,9 +12,13 @@
     "home": {
       "name": "Shahar Dahan",
       "title": "Triathlon & Fitness Coach",
-      "visionDescription": "Helping athletes achieve their goal using smart planning & state of the art tracking.",
+      "visionDescription": "Coaching athletes to achieve their goals using smart planning & state of the art tracking.\nWhile enjoying the journey.",
       "contactTitle": "Connect"
     },
+    "about": {
+      "description": "From Tech to Training. A New Path\n\nAfter 23 years in tech, I made a shift — driven by my passion for movement, promoting a healthy lifestyle, and empowering people to restore strength and confidence\n\nthe last three years, I’ve specialized in performance and rehabilitation coaching. Guiding athletes from injury recovery to endurance events like Ironman, multi-day MTB races, and beyond\n\nNow, I’m combining science-based training with personal experience to help others move better ambitious goal\nIf you're returning from injury, training for something big, or simply looking to feel better in your body — let’s connect"
+    },
+
     "offer": {
       "title": "What I Offer",
       "offers": [

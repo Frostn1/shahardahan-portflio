@@ -1,6 +1,5 @@
 import FacebookLogo from "@/assets/facebook.png";
 import InstagramLogo from "@/assets/instagram.png";
-import TikTokLogo from "@/assets/tiktok.png";
 import WhatsappLogo from "@/assets/whatsapp.png";
 import { PhoneCallIcon } from "lucide-react";
 import { Button } from "../ui/button";
@@ -11,18 +10,13 @@ import { Card, CardContent } from "../ui/card";
 const socials = [
   {
     text: "instagram",
-    url: "https://www.instagram.com/shahar_6",
+    url: "https://www.instagram.com/coachshahar/",
     logo: InstagramLogo,
   },
   {
     text: "facebook",
     url: "https://www.facebook.com/profile.php?id=100087787164428",
     logo: FacebookLogo,
-  },
-  {
-    text: "tiktok",
-    url: "https://www.tiktok.com/@shahard_6",
-    logo: TikTokLogo,
   },
 ];
 
@@ -73,7 +67,9 @@ const Contact = ({
       </div>
       <Card key={Math.random()}>
         <CardContent className="h-fit p-5 flex flex-col gap-5 items-center">
-          <h2 className="text-lg md:text-md">{dictionary.socials.title}</h2>
+          <h2 className="text-lg md:text-md text-center">
+            {dictionary.socials.title}
+          </h2>
           <div className="grid grid-cols-3 gap-10 ">
             {socials.map(({ text, url, logo }) => (
               <a

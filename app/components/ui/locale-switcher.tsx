@@ -16,7 +16,7 @@ import { Languages } from "lucide-react";
 
 // Map each locale to its flag + label
 const localeFlags: Record<string, string> = {
-  en: "🇬🇧",
+  en: "🇺🇸",
   he: "🇮🇱",
 };
 

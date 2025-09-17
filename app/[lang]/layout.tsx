@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Shahar Dahan",
-  description: "How to do i18n in Next.js 15 within app router",
+  description: "",
 };
 
 export async function generateStaticParams() {
@@ -27,7 +27,7 @@ export default async function RootLayout(
       dir={params.lang === "he" ? "rtl" : "ltr"}
     >
       <head>
-        <link rel="icon" type="image/svg+xml" href="/logo.png" />
+        {/*<link rel="icon" type="image/png" href="/logo.png" />*/}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{dictionary.meta.title}</title>
         <meta name="description" content={dictionary.meta.description} />

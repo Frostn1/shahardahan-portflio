@@ -7,7 +7,7 @@
     "home": "Home",
     "offer": "Offer",
     "about": "About",
-    "common-questions": "Common Questions",
+    "common-questions": "FAQ",
     "contact": "Contact",
     "title": "Shahar Dahan | Results Driven Coaching",
     "homeAriaLabel": "Home"
@@ -75,7 +75,7 @@
     },
     "footer": {
       "accessibility": "Accessibility Statement",
-      "text": "Shahar Dahan - Results Driven Coaching"
+      "text": "© 2025 Shahar Dahan - Results Driven Coaching"
     }
   }
 }

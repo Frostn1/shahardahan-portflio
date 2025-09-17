@@ -9,7 +9,7 @@ const About = ({
   return (
     <div className="grid md:grid-cols-2 gap-5 ">
       <img src={Me.src} />
-      <div className="whitespace-pre-line self-center text-wrap w-[80%] text-lg md:text-xl">
+      <div className="whitespace-pre-line self-center text-wrap w-[80%] text-lg lg:text-xl">
         {dictionary.description}
       </div>
     </div>

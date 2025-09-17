@@ -52,7 +52,9 @@ const Contact = ({
         <Button asChild variant={"ghost"} className="text-center">
           <a href="tel:+972525216872">
             {" "}
-            <div className="text-md md:text-lg">+97252-5216872</div>{" "}
+            <div dir="ltr" className="text-md md:text-lg">
+              +97252-5216872
+            </div>{" "}
           </a>
         </Button>
       ),

@@ -22,7 +22,6 @@ const Navbar = ({
         accessKey="z"
         className="flex flex-row items-center gap-2"
         href="#home"
-        // onClick={() => window.location.assign("/")}
       >
         <img src={SiteLogo.src} className="h-11" />
         <h1 className="hidden sm:grid text-xl">{dictionary.title}</h1>
@@ -30,12 +29,7 @@ const Navbar = ({
 
       <div className="flex h-5 flex-row items-center">
         {panels.map(({ name, id }: { name: string; id: string }) => (
-          <Button
-            aria-label={name}
-            key={id}
-            // onClick={() => handleScroll(id)}
-            variant={"link"}
-          >
+          <Button aria-label={name} key={id} variant={"link"}>
             <Link href={`#${id}`} className="text-[10px] sm:text-xs md:text-sm">
               {dictionary[name as keyof typeof dictionary]}
             </Link>

@@ -33,28 +33,23 @@ const Contact = ({
 }) => {
   const contacts = [
     {
-      logo: <img src={WhatsappLogo.src} className="h-7" />,
+      logo: <img src={WhatsappLogo.src} className="h-5 sm:h-7" />,
       button: (
-        <Button asChild variant={"link"} className="text-center">
+        <Button asChild variant={"link"}>
           <a
             href={`https://wa.me/+972525216872?text=${dictionary.whatsappText}`}
           >
-            <div className="text-md md:text-lg">
-              {dictionary.socials.whatsapp}
-            </div>
+            <div>{dictionary.socials.whatsapp}</div>
           </a>
         </Button>
       ),
     },
     {
-      logo: <PhoneCallIcon />,
+      logo: <PhoneCallIcon className="!h-5 !sm:h-7" />,
       button: (
-        <Button asChild variant={"ghost"} className="text-center">
+        <Button asChild variant={"ghost"}>
           <a href="tel:+972525216872">
-            {" "}
-            <div dir="ltr" className="text-md md:text-lg">
-              +97252-5216872
-            </div>{" "}
+            <div dir="ltr">+97252-5216872</div>
           </a>
         </Button>
       ),
@@ -63,17 +58,17 @@ const Contact = ({
   return (
     <div className="p-5 pt-0 flex flex-col items-center gap-3">
       <h2 className="text-3xl text-center">{dictionary.callToAction}</h2>
-      <div className="flex flex-row gap-5 w-xl">
+      <div className="flex flex-row gap-5 w-[90%] md:w-xl">
         {contacts.map(({ logo, button }) => (
           <Card key={Math.random()} className="bg-accent w-[50%]">
-            <CardContent className="p-2 flex flex-row items-center justify-center">
+            <CardContent className="text-xs sm:text-md md:text-xl p-2 flex flex-row items-center justify-center">
               {logo}
               {button}
             </CardContent>
           </Card>
         ))}
       </div>
-      <Card key={Math.random()} className="bg-accent w-xl">
+      <Card key={Math.random()} className="bg-accent w-[90%] md:w-xl">
         <CardContent className="h-fit p-5 flex flex-col gap-5 items-center">
           <h2 className="text-lg md:text-xl text-center">
             {dictionary.socials.title}
@@ -82,8 +77,8 @@ const Contact = ({
             {socials.map(({ text, url, logo }) => (
               <Button key={Math.random()} asChild variant="link">
                 <a rel="noreferrer" target="_blank" href={url}>
-                  <div className="text-md md:text-xl flex gap-2 items-center">
-                    <img src={logo.src} className="h-6 sm:h-7" />
+                  <div className="text-xs sm:text-md md:text-xl flex gap-1 sm:gap-2 justify-center items-center">
+                    <img src={logo.src} className="h-5 sm:h-7" />
                     {
                       dictionary.socials[
                         text as keyof typeof dictionary.socials

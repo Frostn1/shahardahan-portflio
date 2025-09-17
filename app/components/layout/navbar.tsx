@@ -14,7 +14,7 @@ const Navbar = ({
   return (
     <nav
       className={
-        "fixed z-20 top-0 flex w-full h-[60px] items-center justify-between box-border pr-2 sm:pr-5 pl-5 md:pr-10 md:pl-10 bg-background"
+        "fixed z-20 top-0 flex w-full h-[60px] items-center justify-between box-border pr-2 pl-2 lg:pr-10 lg:pl-10 bg-background"
       }
     >
       <Link
@@ -24,12 +24,10 @@ const Navbar = ({
         href="#home"
       >
         <img src={SiteLogo.src} className="h-11" />
-        <h1 className="hidden sm:grid md:text-md lg:text-xl">
-          {dictionary.title}
-        </h1>
+        <h1 className="grid md:text-md lg:text-xl">{dictionary.title}</h1>
       </Link>
 
-      <div className="flex h-5 flex-row items-center gap-1 md:gap-3">
+      <div className="hidden md:flex h-5 flex-row items-center gap-1 lg:gap-3">
         {panels.map(({ name, id }: { name: string; id: string }) => (
           <Button aria-label={name} key={id} variant={"link"}>
             <Link href={`#${id}`} className="text-[10px] sm:text-xs md:text-sm">

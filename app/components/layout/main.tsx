@@ -17,7 +17,7 @@ export const Main = ({
             <BlurFade
               className="relative h-[100%]"
               key={id}
-              delay={0.25 + idx * 0.05}
+              delay={0.1 + idx * 0.05}
               inView
             >
               <El dictionary={dictionary[id as keyof typeof dictionary]} />

@@ -4,6 +4,7 @@ import SiteLogo from "@/assets/logo.png";
 import Link from "next/link";
 import React from "react";
 import { LanguageSwitcher } from "../ui/locale-switcher";
+import { MobileMenu } from "../ui/mobile-menu";
 import { panels } from "./panels";
 
 const Navbar = ({
@@ -24,7 +25,9 @@ const Navbar = ({
         href="#home"
       >
         <img src={SiteLogo.src} className="h-11" />
-        <h1 className="grid md:text-md lg:text-xl">{dictionary.title}</h1>
+        <h1 className="text-sm sm:grid md:text-md lg:text-xl">
+          {dictionary.title}
+        </h1>
       </Link>
 
       <div className="hidden md:flex h-5 flex-row items-center gap-1 lg:gap-3">
@@ -37,6 +40,8 @@ const Navbar = ({
         ))}
         <LanguageSwitcher />
       </div>
+
+      <MobileMenu dictionary={dictionary} />
     </nav>
   );
 };

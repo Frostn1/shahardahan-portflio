@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Shahar Dahan | Results Driven Coaching",
+    "description": "After 23 years in tech, I made a shift — driven by my passion for movement, promoting a healthy lifestyle, and empowering people to restore strength and confidence\n\nOver the last three years, I’ve specialized in performance and rehabilitation coaching. Guiding athletes from injury recovery to endurance events like Ironman, multi-day MTB races, and beyond\n\nNow, I’m combining science-based training with personal experience to help others move better, get stronger, and achieve ambitious goals\n\nIf you're returning from injury, training for something big, or simply looking to feel better in your body — let’s connect"
+  },
   "navbar": {
     "home": "Home",
     "offer": "Offer",
@@ -56,13 +60,22 @@
     "contact": {
       "callToAction": "Ready to start?",
       "socials": {
-        "title": "Find me on social media !",
+        "title": "Find me on social media!",
         "instagram": "Instagram",
         "facebook": "Facebook",
         "tiktok": "TikTok",
-        "whatsapp": "WhatsApp"
+        "whatsapp": "WhatsApp",
+        "linkedin": "LinkedIn"
       },
       "whatsappText": "I would like to receive additional information"
+    },
+    "accessibility": {
+      "title": "Accessibility Statement",
+      "content": "Shahar Dahan - Results Driven Coaching is committed to providing an accessible website experience for all users. We strive to ensure that our website is usable by people with disabilities and that it meets the Web Content Accessibility Guidelines (WCAG) 2.1 AA standards."
+    },
+    "footer": {
+      "accessibility": "Accessibility Statement",
+      "text": "Shahar Dahan - Results Driven Coaching"
     }
   }
 }

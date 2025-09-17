@@ -17,14 +17,14 @@ export const Main = ({
             <BlurFade
               className="relative h-[100%]"
               key={id}
-              delay={0.1 + idx * 0.05}
+              delay={idx * 0.01}
               inView
             >
               <El dictionary={dictionary[id as keyof typeof dictionary]} />
             </BlurFade>
           </Panel>
         ))}
-        <Footer />
+        <Footer dictionary={dictionary["footer"]} />
       </div>
     </div>
   );

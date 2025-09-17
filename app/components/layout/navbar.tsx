@@ -24,10 +24,12 @@ const Navbar = ({
         href="#home"
       >
         <img src={SiteLogo.src} className="h-11" />
-        <h1 className="hidden sm:grid text-xl">{dictionary.title}</h1>
+        <h1 className="hidden sm:grid md:text-md lg:text-xl">
+          {dictionary.title}
+        </h1>
       </Link>
 
-      <div className="flex h-5 flex-row items-center">
+      <div className="flex h-5 flex-row items-center gap-1 md:gap-3">
         {panels.map(({ name, id }: { name: string; id: string }) => (
           <Button aria-label={name} key={id} variant={"link"}>
             <Link href={`#${id}`} className="text-[10px] sm:text-xs md:text-sm">

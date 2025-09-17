@@ -7,9 +7,9 @@ const About = ({
   dictionary: Awaited<ReturnType<typeof getDictionary>>["main"]["about"];
 }) => {
   return (
-    <div className="grid md:grid-cols-2 gap-5">
-      <img className="" src={Me.src} />
-      <div className="whitespace-pre-line text-wrap w-[80%]">
+    <div className="grid md:grid-cols-2 gap-5 ">
+      <img src={Me.src} />
+      <div className="whitespace-pre-line self-center text-wrap w-[80%] text-lg md:text-xl">
         {dictionary.description}
       </div>
     </div>

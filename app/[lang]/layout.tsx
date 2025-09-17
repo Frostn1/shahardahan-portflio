@@ -29,20 +29,14 @@ export default async function RootLayout(
       <head>
         <link rel="icon" type="image/svg+xml" href="/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>שחר דהן</title>
-        <meta
-          name="description"
-          content="סובלים מכאבי גב ? אני תום דהן, מטפל בכאבי גב, מציע פתרונות מותאמים אישית להקלה על כאבים ושיפור איכות החיים."
-        />
-        <meta property="og:title" content="תום דהן" />
-        <meta
-          property="og:description"
-          content="סובלים מכאבי גב ? אני תום דהן, מטפל בכאבי גב, מציע פתרונות מותאמים אישית להקלה על כאבים ושיפור איכות החיים."
-        />
-        <meta
+        <title>{dictionary.meta.title}</title>
+        <meta name="description" content={dictionary.meta.description} />
+        <meta property="og:title" content={dictionary.meta.title} />
+        <meta property="og:description" content={dictionary.meta.description} />
+        {/*<meta
           property="og:image"
           content="https://ik.imagekit.io/seandahan/tom-vsl.webm/ik-thumbnail.jpg"
-        />
+        />*/}
       </head>
       <body className={`antialiased h-full w-full font-[Varela]`}>
         <Navbar dictionary={dictionary.navbar} />

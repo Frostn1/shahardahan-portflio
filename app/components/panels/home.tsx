@@ -11,7 +11,7 @@ const Home = ({
   return (
     <div
       id={"welcome"}
-      className="h-full flex flex-col p-5 sm:p-30 justify-center group relative w-full gap-20 lg:gap-30 items-center rounded-lg"
+      className="h-full flex flex-col p-30 pb-5 justify-center group relative w-full gap-18 items-center rounded-lg"
     >
       <DotPattern
         width={20}

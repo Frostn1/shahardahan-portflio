@@ -1,15 +1,15 @@
-const Accessibility = () => {
+import { getDictionary } from "@/lib/get-dictionary";
+import { Locale } from "../../../i18n-config";
+
+const Accessibility = async (props: { params: Promise<{ lang: Locale }> }) => {
+  const { lang } = await props.params;
+
+  const dictionary = (await getDictionary(lang)).main.accessibility;
+
   return (
-    <div>
-      <div className="text-3xl mb-5">נגישות</div>
-      <div className="text-wrap w-md">
-        האתר נבנה תוך הקפדה על נגישות מלאה לכלל האוכלוסיה, כולל אנשים עם
-        מוגבלויות.
-        <br />
-        <br />
-        אם יש לכם שאלות או בקשות נוספות, אתם מוזמנים לפנות אלי במייל
-        shahar.dahan@gmail.com.
-      </div>
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-3xl mb-5">{dictionary.title}</h1>
+      <p className="text-wrap w-md">{dictionary.content}</p>
     </div>
   );
 };

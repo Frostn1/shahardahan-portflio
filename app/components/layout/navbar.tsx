@@ -22,7 +22,7 @@ const Navbar = ({
         aria-label={dictionary.homeAriaLabel}
         accessKey="z"
         className="flex flex-row items-center gap-2"
-        href="#home"
+        href="/#home"
       >
         <img src={SiteLogo.src} className="h-11" />
         <h1 className="text-sm sm:grid md:text-md lg:text-xl">
@@ -33,7 +33,10 @@ const Navbar = ({
       <div className="hidden md:flex h-5 flex-row items-center gap-1 lg:gap-3">
         {panels.map(({ name, id }: { name: string; id: string }) => (
           <Button aria-label={name} key={id} variant={"link"}>
-            <Link href={`#${id}`} className="text-[10px] sm:text-xs md:text-sm">
+            <Link
+              href={`/#${id}`}
+              className="text-[10px] sm:text-xs md:text-sm"
+            >
               {dictionary[name as keyof typeof dictionary]}
             </Link>
           </Button>

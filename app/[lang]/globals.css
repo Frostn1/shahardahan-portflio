@@ -7,6 +7,10 @@
     scrollbar-width: none; /* Firefox */
     font-family: Verlan, sans-serif;
 }
+ul {
+    list-style-type: disc;
+    margin-inline-start: 20px;
+}
 html {
     @apply scroll-smooth;
     height: 100vh;

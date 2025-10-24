@@ -9,6 +9,7 @@
     "about": "About",
     "common-questions": "FAQ",
     "contact": "Contact",
+    "testimonials": "Testimonials",
     "title": "Shahar Dahan | Results Driven Coaching",
     "homeAriaLabel": "Home"
   },
@@ -20,23 +21,46 @@
       "contactTitle": "Connect"
     },
     "about": {
-      "description": "<p>After 23 years in tech, I followed my passion and became a certified <b>Triathlon Instructor</b> and <b>Personal Fitness Coach</b>.\n\nI specialize in <b>performance and rehab coaching</b>—helping athletes prepare for triathlons, Ironman, MTB races, and marathons, as well as guiding people through recovery and strength-building after injury.\n\nMy goal: to help you <b>train smarter, recover stronger, and live better.</b></p>"
+      "description": "<p>After 23 years in tech, I followed my passion and became a certified <b>Triathlon Instructor</b> and <b>Personal Fitness Coach</b>.\n\nI specialize in <b>performance and rehab coaching</b>—helping athletes prepare for triathlons, Ironman, MTB races, and marathons, as well as guiding people through recovery and strength-building after injury.\n\nMy goal: to help you <b>train smarter, recover stronger, and live better.</b></p>",
+      "readmore": "Read more"
     },
-
+    "testimonials": {
+      "title": "Testimonials",
+      "testimonials": [
+        {
+          "name": "Itamar Golan",
+          "title": "Triathlete",
+          "description": "Shahar is an amazing coach!\nHe guided me from zero experience to completing a Half Ironman, and now continues to train me with a full strength program alongside mountain bike workouts.\nA true professional with a personal approach, always available for any question — simply a great guy!\nHighly recommended!",
+          "src": "https://ik.imagekit.io/seandahan/Shahar%20Images/itamar.jpeg?updatedAt=1761330927337"
+        },
+        {
+          "name": "Helen Moreh",
+          "title": "Mountain Bike Rider",
+          "description": "My name is Helen, a competitive mountain biker for 5 years, age 53.\n\nIn a very short time, Shahar strengthened my natural athletic abilities and taught me there’s another, better way to build a solid foundation.\nThanks to him, I have more confidence in my abilities.\nHe has a real talent for discovering his athletes’ inner strength — all done calmly and peacefully.",
+          "src": "https://ik.imagekit.io/seandahan/Shahar%20Images/helen.jpeg?updatedAt=1761330901178"
+        },
+        {
+          "name": "Yanai Dado",
+          "title": "Cyclist",
+          "description": "The training program is fully personalized according to my schedule and syncs seamlessly with my watch. The workouts helped me a lot — especially in cycling and swimming, where I had no previous experience and saw the biggest improvements.",
+          "src": "https://ik.imagekit.io/seandahan/Shahar%20Images/yanay.jpeg?updatedAt=1761331457267"
+        }
+      ]
+    },
     "offer": {
       "title": "What I Offer",
       "offers": [
         {
-          "title": "Personal Training Program After Injury",
-          "description": "Personal and close guidance throughout the process\nStrengthening the body, improving range of motion and flexibility\nGradual return to general fitness\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
+          "title": "Post injury rehabilitation program",
+          "description": "<ul><li>Improve range of motion, flexibility, and strength</li><li>Gradually build confidence, return to general fitness</li><li>Customized weekly plan, using Training Peaks software</li><li>Personal guidance throughout the process, with on-demand communication for questions and adjustments</li></ul>"
         },
         {
-          "title": "Personal Cycling Training Program",
-          "description": "Personal and close guidance throughout the process\nTraining focused on strength (aerobic, anaerobic, and explosive power)\nCycling technique and control workouts\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
+          "title": "Cycling or Running training",
+          "description": "<ul><li>Training focused on strength (aerobic, anaerobic, and explosive power)</li><li>Cycling/Running technique workouts</li><li>Customized weekly plan, using Training Peaks software</li><li>Personal guidance throughout the process, with on-demand communication for questions and adjustments</li></ul>"
         },
         {
-          "title": "Personal Triathlon Training Program",
-          "description": "Personal and close guidance throughout the process\nTraining for all three disciplines (swimming, cycling, and running)\nOpen water swimming practice and transition training\nWeekly customized plan in TP software\nOngoing WhatsApp communication for questions and adjustments"
+          "title": "Triathlon Coaching",
+          "description": "<ul><li>Coaching on Tri disciplines (swimming, cycling, and running)</li><li>Open water swimming practice and transition training</li><li>Customized weekly plan, using Training Peaks software</li><li>Personal guidance throughout the process, with on-demand communication for questions and adjustments</li></ul>"
         }
       ]
     },
@@ -44,16 +68,16 @@
       "title": "Frequently Asked Questions",
       "questions": [
         {
-          "question": "How does the training method work?",
-          "answer": "A personal and professional plan tailored to the athlete’s goals\nOngoing weekly communication\nWorkout analysis and constant feedback using advanced technology\nBriefings before races and important workouts"
+          "question": "How does it work?",
+          "answer": "<ul><li>A personal and professional plan tailored to the athlete’s goals</li><li>Workout analysis and constant feedback using advanced technology</li><li>Briefings/debriefings before and after races and important workouts</li><li>On-demand communication and plan adjustments</li></ul>"
         },
         {
-          "question": "Who are the trainings for?",
-          "answer": "Beginner triathletes with basic knowledge\nProfessional triathletes who want to improve their performance and reach new heights\nCyclists of all levels\nAthletes who want to recover from injury effectively"
+          "question": "Who is it for?",
+          "answer": "<ul><li>Triathletes<ul><li>Beginner with basic knowledge</li><li>Professional seeking to improve their performance</li></ul></li><li>Cyclists and Runners of all levels</li><li>Athletes &amp; individuals who want to recover from injury effectively</li></ul>"
         },
         {
-          "question": "Am I ready for a professional training plan?",
-          "answer": "If you are preparing for a triathlon or cycling competition\nEnjoy independent training\nLooking for a coach who will provide personal attention, close guidance, and a professional training plan\nWant to balance family life with your passion for sports\nYou’ve come to the right place!"
+          "question": "Ready to start?",
+          "answer": "<ul><li>If you are preparing for a triathlon or cycling competition</li><li>Enjoy independent training</li><li>Looking for a coach who will provide personal attention, close guidance, and a professional training plan</li><li>Want to balance family life with your passion for sports</li><b>You’ve come to the right place!</b></ul>"
         }
       ]
     },

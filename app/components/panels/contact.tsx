@@ -1,7 +1,7 @@
-import FacebookLogo from "@/assets/facebook.png";
-import InstagramLogo from "@/assets/instagram.png";
-import WhatsappLogo from "@/assets/whatsapp.png";
-import LinkedinLogo from "@/assets/linkedin.svg";
+import FacebookLogo from "@/[lang]/assets/facebook.png";
+import InstagramLogo from "@/[lang]/assets/instagram.png";
+import WhatsappLogo from "@/[lang]/assets/whatsapp.png";
+import LinkedinLogo from "@/[lang]/assets/linkedin.svg";
 import { PhoneCallIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import { getDictionary } from "@/lib/get-dictionary";

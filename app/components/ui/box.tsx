@@ -6,6 +6,7 @@ import {
   CardContent,
   CardDescription,
 } from "./card";
+import parse from "html-react-parser";
 
 interface Props {
   title: string;
@@ -21,11 +22,7 @@ export default function Box({ title, description }: Props) {
       </CardHeader>
       <CardContent>
         <CardDescription className="text-md md:text-lg whitespace-pre-line leading-7">
-          <ul className="list-disc">
-            {description.split("\n").map((line, index) => (
-              <li key={index}>{line}</li>
-            ))}
-          </ul>
+          {parse(description)}
         </CardDescription>
       </CardContent>
     </Card>

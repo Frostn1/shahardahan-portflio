@@ -1,4 +1,3 @@
-// import { Button } from "../ui/button";
 import { getDictionary } from "@/lib/get-dictionary";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";

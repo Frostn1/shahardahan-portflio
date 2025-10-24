@@ -3,6 +3,7 @@ import CommonQuestions from "../panels/common-questions";
 import Offer from "../panels/offer";
 import Contact from "../panels/contact";
 import About from "../panels/about";
+import Testimonials from "../panels/testemonials";
 
 interface PanelInterface {
   El: React.ComponentType<{
@@ -32,6 +33,11 @@ export const panels: PanelInterface[] = [
     name: "common-questions",
     id: "common-questions",
     El: CommonQuestions,
+  },
+  {
+    name: "testimonials",
+    id: "testimonials",
+    El: Testimonials,
   },
   {
     name: "contact",

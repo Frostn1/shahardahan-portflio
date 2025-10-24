@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { getDictionary } from "@/lib/get-dictionary";
-import SiteLogo from "@/assets/logo.png";
+import SiteLogo from "@/[lang]/assets/logo.png";
 import Link from "next/link";
 import React from "react";
 import { LanguageSwitcher } from "../ui/locale-switcher";

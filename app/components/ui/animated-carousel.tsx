@@ -20,7 +20,7 @@ const images = [
   "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar6.jpeg",
 ];
 
-export default function CarouselPlugin({ className }) {
+export default function CarouselPlugin({ className }: { className?: string }) {
   const plugin = React.useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true }),
   );

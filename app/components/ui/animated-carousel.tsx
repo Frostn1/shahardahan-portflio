@@ -9,28 +9,45 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-export default function CarouselPlugin() {
+import { cn } from "@/lib/utils";
+
+const images = [
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar1.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar2.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar3.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar4.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar5.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar6.jpeg",
+];
+
+export default function CarouselPlugin({ className }) {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
+    Autoplay({ delay: 5000, stopOnInteraction: true }),
   );
   return (
-    <div className="w-full p-6 flex justify-center">
+    <div className={cn("w-full p-6 flex justify-center", className)}>
       <Carousel
         plugins={[plugin.current]}
-        className="w-full max-w-xs"
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        className="w-full max-w-lg md:max-w-5xl"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
+          {images.map((imagesrc, index) => (
             <CarouselItem key={index}>
-              <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-4xl font-semibold">{index + 1}</span>
-                  </CardContent>
-                </Card>
-              </div>
+              <Card>
+                <CardContent className="flex aspect-video items-center justify-center p-1">
+                  <img
+                    src={imagesrc}
+                    alt={`Image ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </CardContent>
+              </Card>
             </CarouselItem>
           ))}
         </CarouselContent>

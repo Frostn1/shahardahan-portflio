@@ -4,8 +4,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
-import React = require("react");
 
 export type Testimonial = {
   description: string;
@@ -25,7 +23,6 @@ export const AnimatedTestimonials = ({
   autoplay = false,
   className,
 }: AnimatedTestimonialsProps) => {
-  console.log("testimonials", testimonials);
   const [active, setActive] = useState(0);
 
   const handleNext = () => {

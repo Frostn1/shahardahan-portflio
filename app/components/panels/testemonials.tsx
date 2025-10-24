@@ -1,9 +1,5 @@
 import { getDictionary } from "@/lib/get-dictionary";
-import {
-  AnimatedTestimonials,
-  Testimonial,
-} from "../../components/ui/animated-testimonials";
-import React = require("react");
+import { AnimatedTestimonials } from "../../components/ui/animated-testimonials";
 const Testimonials = ({
   dictionary,
 }: {

@@ -25,7 +25,7 @@ export default function CarouselPlugin({ className }: { className?: string }) {
     Autoplay({ delay: 5000, stopOnInteraction: true }),
   );
   return (
-    <div className={cn("w-full p-6 flex justify-center", className)}>
+    <div dir="ltr" className={cn("w-full p-10 flex justify-center", className)}>
       <Carousel
         plugins={[plugin.current]}
         opts={{
@@ -40,11 +40,11 @@ export default function CarouselPlugin({ className }: { className?: string }) {
           {images.map((imagesrc, index) => (
             <CarouselItem key={index}>
               <Card>
-                <CardContent className="flex aspect-video items-center justify-center p-1">
+                <CardContent className="flex aspect-video items-center justify-center p-0">
                   <img
                     src={imagesrc}
                     alt={`Image ${index + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </CardContent>
               </Card>

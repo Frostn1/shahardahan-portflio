@@ -13,16 +13,16 @@ import { cn } from "@/lib/utils";
 
 const images = [
   "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar1.jpeg",
-  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar2.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar2.jpeg?",
   "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar3.jpeg",
   "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar4.jpeg",
   "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar5.jpeg",
-  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar6.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar6.jpeg?",
 ];
 
 export default function CarouselPlugin({ className }: { className?: string }) {
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true }),
+    Autoplay({ delay: 2000, stopOnInteraction: false }),
   );
   return (
     <div dir="ltr" className={cn("w-full p-10 flex justify-center", className)}>
@@ -51,8 +51,8 @@ export default function CarouselPlugin({ className }: { className?: string }) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        {/*<CarouselPrevious />
+        <CarouselNext />*/}
       </Carousel>
     </div>
   );

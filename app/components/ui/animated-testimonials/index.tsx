@@ -91,9 +91,7 @@ export const AnimatedTestimonials = ({
                   className="absolute inset-0 origin-bottom"
                 >
                   <img
-                    onClick={() => {
-                      setActive(index);
-                    }}
+                    onClick={handleNext}
                     src={testimonial.src}
                     alt={testimonial.name}
                     width={500}

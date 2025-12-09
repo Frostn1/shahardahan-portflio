@@ -12,13 +12,9 @@ const About = ({
 }) => {
   return (
     <div className="grid md:grid-cols-5 gap-5 ">
-      {/*<img src={Me.src} />*/}
       <CarouselPlugin className={"col-span-3"} />
       <div className="col-span-2 whitespace-pre-line flex flex-col justify-around gap-10 self-center text-wrap w-[80%] text-lg lg:text-xl">
         {parse(dictionary.description)}
-        {/*<Button className="w-fit" asChild variant="outline">
-          <Link href={"/mystory"}>{dictionary.readmore}</Link>
-        </Button>*/}
       </div>
     </div>
   );

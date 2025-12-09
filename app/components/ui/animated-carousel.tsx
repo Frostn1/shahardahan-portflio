@@ -6,12 +6,11 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
 
 const images = [
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2013.18.39.jpeg",
   "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar1.jpeg",
   "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar2.jpeg?",
   "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar3.jpeg",
@@ -51,8 +50,6 @@ export default function CarouselPlugin({ className }: { className?: string }) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        {/*<CarouselPrevious />
-        <CarouselNext />*/}
       </Carousel>
     </div>
   );

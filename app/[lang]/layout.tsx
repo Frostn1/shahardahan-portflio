@@ -33,10 +33,10 @@ export default async function RootLayout(
         <meta name="description" content={dictionary.meta.description} />
         <meta property="og:title" content={dictionary.meta.title} />
         <meta property="og:description" content={dictionary.meta.description} />
-        {/*<meta
+        <meta
           property="og:image"
-          content="https://ik.imagekit.io/seandahan/tom-vsl.webm/ik-thumbnail.jpg"
-        />*/}
+          content="https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2013.18.39.jpeg"
+        />
       </head>
       <body className={`antialiased h-full w-full font-[Varela]`}>
         <Navbar dictionary={dictionary.navbar} />

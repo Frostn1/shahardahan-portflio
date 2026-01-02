@@ -11,12 +11,17 @@ import { cn } from "@/lib/utils";
 
 const images = [
   "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2013.18.39.jpeg",
-  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar1.jpeg",
-  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar2.jpeg?",
-  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar3.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2019.06.16.jpeg",
   "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar4.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar1.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2019.04.25.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar3.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar7",
   "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar5.jpeg",
-  "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar6.jpeg?",
+  // "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar6.jpeg?",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2019.06.20.jpeg",
+  // "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2019.05.40.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2022.33.56.jpeg",
 ];
 
 export default function CarouselPlugin({ className }: { className?: string }) {
@@ -24,14 +29,20 @@ export default function CarouselPlugin({ className }: { className?: string }) {
     Autoplay({ delay: 2000, stopOnInteraction: false }),
   );
   return (
-    <div dir="ltr" className={cn("w-full p-10 flex justify-center", className)}>
+    <div
+      dir="ltr"
+      className={cn(
+        "w-full p-10 sm:p-0 md:p-5 box-border flex justify-center",
+        className,
+      )}
+    >
       <Carousel
         plugins={[plugin.current]}
         opts={{
           align: "start",
           loop: true,
         }}
-        className="w-full max-w-lg md:max-w-5xl"
+        className="w-full max-w-2xl md:max-w-2xl"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
@@ -39,7 +50,7 @@ export default function CarouselPlugin({ className }: { className?: string }) {
           {images.map((imagesrc, index) => (
             <CarouselItem key={index}>
               <Card>
-                <CardContent className="flex aspect-video items-center justify-center p-0">
+                <CardContent className="flex aspect-square items-center justify-center p-0">
                   <img
                     src={imagesrc}
                     alt={`Image ${index + 1}`}

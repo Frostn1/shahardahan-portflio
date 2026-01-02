@@ -9,7 +9,7 @@ const Home = ({
   return (
     <div
       id={"welcome"}
-      className="h-full flex flex-col p-5 md:p-30 md:pb-5 justify-center group relative w-full gap-5 md:gap-18 items-center"
+      className="h-full flex flex-col p-5 md:p-30 md:pt-20 md:pb-0 justify-center group relative w-full gap-5 md:gap-18 items-center"
     >
       <DotPattern
         width={15}

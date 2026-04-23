@@ -21,7 +21,7 @@ const images = [
   // "https://ik.imagekit.io/seandahan/Shahar%20Images/shahar6.jpeg?",
   "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2019.06.20.jpeg",
   // "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2019.05.40.jpeg",
-  "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2022.33.56.jpeg",
+  "https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202026-04-22%20at%2016.59.57.jpeg"
 ];
 
 export default function CarouselPlugin({ className }: { className?: string }) {

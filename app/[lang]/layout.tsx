@@ -1,5 +1,4 @@
 import { i18n, Locale } from "../../i18n-config";
-import Navbar from "../components/layout/navbar";
 import { getDictionary } from "../lib/get-dictionary";
 import "./globals.css";
 import { Metadata } from "next";
@@ -23,11 +22,9 @@ export default async function RootLayout(
   return (
     <html
       lang={params.lang}
-      className="dark"
       dir={params.lang === "he" ? "rtl" : "ltr"}
     >
       <head>
-        {/*<link rel="icon" type="image/png" href="/logo.png" />*/}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{dictionary.meta.title}</title>
         <meta name="description" content={dictionary.meta.description} />
@@ -37,11 +34,18 @@ export default async function RootLayout(
           property="og:image"
           content="https://ik.imagekit.io/seandahan/Shahar%20Images/WhatsApp%20Image%202025-12-09%20at%2013.18.39.jpeg"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className={`antialiased h-full w-full font-[Varela]`}>
-        <Navbar dictionary={dictionary.navbar} />
-        <div className="mt-[60px]">{props.children}</div>
-      </body>
+      <body className="antialiased">{props.children}</body>
     </html>
   );
 }

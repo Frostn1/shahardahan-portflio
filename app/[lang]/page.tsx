@@ -1,6 +1,6 @@
 import { getDictionary } from "../lib/get-dictionary";
 import { Locale } from "../../i18n-config";
-import { Main } from "../components/layout/main";
+import Champion from "../components/champion/champion";
 
 export default async function IndexPage(props: {
   params: Promise<{ lang: Locale }>;
@@ -9,5 +9,7 @@ export default async function IndexPage(props: {
 
   const dictionary = await getDictionary(lang);
 
-  return <Main dictionary={dictionary["main"]} />;
+  return (
+    <Champion dictionary={dictionary["main"]} navbar={dictionary.navbar} />
+  );
 }

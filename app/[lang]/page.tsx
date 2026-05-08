@@ -1,6 +1,6 @@
 import { getDictionary } from "../lib/get-dictionary";
 import { Locale } from "../../i18n-config";
-import RBRC from "../components/rbrc/rbrc";
+import Champion from "../components/champion/champion";
 
 export default async function IndexPage(props: {
   params: Promise<{ lang: Locale }>;
@@ -10,10 +10,6 @@ export default async function IndexPage(props: {
   const dictionary = await getDictionary(lang);
 
   return (
-    <RBRC
-      dictionary={dictionary["main"]}
-      navbar={dictionary.navbar}
-      lang={lang}
-    />
+    <Champion dictionary={dictionary["main"]} navbar={dictionary.navbar} />
   );
 }

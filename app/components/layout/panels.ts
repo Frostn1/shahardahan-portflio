@@ -26,12 +26,12 @@ export const panels: PanelInterface[] = [
   },
   {
     name: "offer",
-    id: "offer",
+    id: "programs",
     El: Offer,
   },
   {
     name: "common-questions",
-    id: "common-questions",
+    id: "faq",
     El: CommonQuestions,
   },
   {

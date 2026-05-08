@@ -27,3 +27,4 @@ bun.lock
 *.lock
 .open-next/*
 .wrangler/*
+
